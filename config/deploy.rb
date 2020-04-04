@@ -7,7 +7,7 @@ set :application, 'freemarket_sample_64b'
 
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:ToshihiroKimura/freemarket_sample_64b.git'
-set :deploy_to, '/var/www/freemarket_sample_64b'
+# set :deploy_to, '/var/www/freemarket_sample_64b'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
