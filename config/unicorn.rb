@@ -5,7 +5,7 @@ app_path = File.expand_path('/var/www/freemarket_sample_64b')
 worker_processes 1
 
 # currentを指定
-# working_directory File.expand_path('var/www/freemarket_sample_64b/current', __FILE__)
+working_directory "#{app_path}/current"
 
 #Unicornの起動に必要なファイルの設置場所を指定
 pid "#{app_path}/shared/tmp/pids/unicorn.pid"
