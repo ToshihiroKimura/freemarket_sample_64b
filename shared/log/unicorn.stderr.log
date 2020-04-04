@@ -1,0 +1,197 @@
+I, [2020-04-04T05:15:28.090459 #17230]  INFO -- : Refreshing Gem list
+bundler: failed to load command: unicorn (/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn)
+ArgumentError: Missing required arguments: aws_access_key_id, aws_secret_access_key
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/fog-core-2.2.0/lib/fog/core/service.rb:244:in `validate_options'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/fog-core-2.2.0/lib/fog/core/service.rb:268:in `handle_settings'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/fog-core-2.2.0/lib/fog/core/service.rb:98:in `new'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/fog-core-2.2.0/lib/fog/core/services_mixin.rb:29:in `new'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/carrierwave-2.1.0/lib/carrierwave/storage/fog.rb:68:in `eager_load'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/carrierwave-2.1.0/lib/carrierwave.rb:77:in `block in <class:Railtie>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:49:in `each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application/finisher.rb:58:in `block in <module:Finisher>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `instance_exec'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `run'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `call'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:54:in `run_initializers'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application.rb:352:in `initialize!'
+  /var/www/freemarket_sample_64b/releases/20200404050701/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require_relative'
+  config.ru:4:in `block in <main>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `instance_eval'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<top (required)>'
+I, [2020-04-04T05:50:52.065165 #18453]  INFO -- : Refreshing Gem list
+I, [2020-04-04T05:50:54.370528 #18453]  INFO -- : listening on addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T05:50:54.379834 #18453]  INFO -- : master process ready
+I, [2020-04-04T05:50:54.386522 #18457]  INFO -- : worker=0 ready
+I, [2020-04-04T05:50:54.603579 #18486]  INFO -- : executing ["/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/freemarket_sample_64b/current/config/unicorn.rb", "-E", "production", "-D", {8=>#<Kgio::UNIXServer:/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock>}] (in /var/www/freemarket_sample_64b/releases/20200404055027)
+I, [2020-04-04T05:50:54.603668 #18486]  INFO -- : forked child re-executing...
+I, [2020-04-04T05:50:54.874903 #18486]  INFO -- : inherited addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T05:50:54.875106 #18486]  INFO -- : Refreshing Gem list
+I, [2020-04-04T05:50:56.975279 #18486]  INFO -- : master process ready
+I, [2020-04-04T05:50:56.979454 #18528]  INFO -- : worker=0 ready
+I, [2020-04-04T05:50:57.069356 #18453]  INFO -- : reaped #<Process::Status: pid 18457 exit 0> worker=0
+I, [2020-04-04T05:50:57.069450 #18453]  INFO -- : master complete
+I, [2020-04-04T06:29:31.382358 #20000]  INFO -- : executing ["/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/freemarket_sample_64b/current/config/unicorn.rb", "-E", "production", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/freemarket_sample_64b/releases/20200404062907)
+I, [2020-04-04T06:29:31.382465 #20000]  INFO -- : forked child re-executing...
+I, [2020-04-04T06:29:31.655091 #20000]  INFO -- : inherited addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T06:29:31.655307 #20000]  INFO -- : Refreshing Gem list
+I, [2020-04-04T06:29:33.727205 #20000]  INFO -- : master process ready
+I, [2020-04-04T06:29:33.728938 #20042]  INFO -- : worker=0 ready
+I, [2020-04-04T06:29:33.819805 #18486]  INFO -- : reaped #<Process::Status: pid 18528 exit 0> worker=0
+I, [2020-04-04T06:29:33.819899 #18486]  INFO -- : master complete
+I, [2020-04-04T06:31:55.078449 #20000]  INFO -- : reaped #<Process::Status: pid 20042 exit 0> worker=0
+I, [2020-04-04T06:31:55.078578 #20000]  INFO -- : master complete
+I, [2020-04-04T06:32:35.444761 #21163]  INFO -- : Refreshing Gem list
+I, [2020-04-04T06:32:37.497926 #21163]  INFO -- : unlinking existing socket=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock
+I, [2020-04-04T06:32:37.499359 #21163]  INFO -- : listening on addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T06:32:37.506432 #21163]  INFO -- : master process ready
+I, [2020-04-04T06:32:37.513191 #21167]  INFO -- : worker=0 ready
+I, [2020-04-04T06:32:37.672349 #21196]  INFO -- : executing ["/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/freemarket_sample_64b/current/config/unicorn.rb", "-E", "production", "-D", {8=>#<Kgio::UNIXServer:/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock>}] (in /var/www/freemarket_sample_64b/releases/20200404063211)
+I, [2020-04-04T06:32:37.672480 #21196]  INFO -- : forked child re-executing...
+I, [2020-04-04T06:32:37.930287 #21196]  INFO -- : inherited addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T06:32:37.930538 #21196]  INFO -- : Refreshing Gem list
+I, [2020-04-04T06:32:40.031284 #21196]  INFO -- : master process ready
+I, [2020-04-04T06:32:40.035535 #21238]  INFO -- : worker=0 ready
+I, [2020-04-04T06:32:40.125823 #21163]  INFO -- : reaped #<Process::Status: pid 21167 exit 0> worker=0
+I, [2020-04-04T06:32:40.125931 #21163]  INFO -- : master complete
+I, [2020-04-04T10:02:14.984719 #22710]  INFO -- : executing ["/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn", "-c", "/var/www/freemarket_sample_64b/current/config/unicorn.rb", "-E", "production", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/freemarket_sample_64b/releases/20200404100136)
+I, [2020-04-04T10:02:14.984811 #22710]  INFO -- : forked child re-executing...
+I, [2020-04-04T10:02:15.258566 #22710]  INFO -- : inherited addr=/var/www/freemarket_sample_64b/shared/tmp/sockets/unicorn.sock fd=8
+I, [2020-04-04T10:02:15.258779 #22710]  INFO -- : Refreshing Gem list
+/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require': No such file to load -- payjp (LoadError)
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /var/www/freemarket_sample_64b/releases/20200404100136/app/controllers/cards_controller.rb:3:in `<class:CardsController>'
+	from /var/www/freemarket_sample_64b/releases/20200404100136/app/controllers/cards_controller.rb:1:in `<top (required)>'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:380:in `block in require_or_load'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies/interlock.rb:11:in `loading'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:37:in `load_interlock'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:358:in `require_or_load'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:336:in `depend_on'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:252:in `require_dependency'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:476:in `block (2 levels) in eager_load!'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:475:in `each'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:475:in `block in eager_load!'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:473:in `each'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:473:in `eager_load!'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:354:in `eager_load!'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application/finisher.rb:59:in `each'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application/finisher.rb:59:in `block in <module:Finisher>'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `instance_exec'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `run'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `call'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+	from /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:54:in `run_initializers'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application.rb:352:in `initialize!'
+	from /var/www/freemarket_sample_64b/releases/20200404100136/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require_relative'
+	from config.ru:4:in `block in <main>'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `instance_eval'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+	from /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+E, [2020-04-04T10:02:17.315120 #21196] ERROR -- : reaped #<Process::Status: pid 22710 exit 1> exec()-ed
+I, [2020-04-04T10:03:58.291113 #21196]  INFO -- : reaped #<Process::Status: pid 21238 exit 0> worker=0
+I, [2020-04-04T10:03:58.291235 #21196]  INFO -- : master complete
+I, [2020-04-04T10:04:36.452393 #23857]  INFO -- : Refreshing Gem list
+bundler: failed to load command: unicorn (/var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn)
+NameError: undefined local variable or method `has_ancestry' for Category (call 'Category.connection' to establish a connection):Class
+Did you mean?  has_many
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activerecord-5.0.7.2/lib/active_record/dynamic_matchers.rb:21:in `method_missing'
+  /var/www/freemarket_sample_64b/releases/20200404100412/app/models/category.rb:3:in `<class:Category>'
+  /var/www/freemarket_sample_64b/releases/20200404100412/app/models/category.rb:1:in `<top (required)>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:380:in `block in require_or_load'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies/interlock.rb:11:in `loading'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:37:in `load_interlock'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:358:in `require_or_load'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:336:in `depend_on'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:252:in `require_dependency'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:476:in `block (2 levels) in eager_load!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:475:in `each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:475:in `block in eager_load!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:473:in `each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:473:in `eager_load!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/engine.rb:354:in `eager_load!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application/finisher.rb:59:in `each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application/finisher.rb:59:in `block in <module:Finisher>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `instance_exec'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:30:in `run'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:228:in `block in tsort_each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `call'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:226:in `tsort_each'
+  /home/ec2-user/.rbenv/versions/2.5.1/lib/ruby/2.5.0/tsort.rb:205:in `tsort_each'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/initializable.rb:54:in `run_initializers'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/railties-5.0.7.2/lib/rails/application.rb:352:in `initialize!'
+  /var/www/freemarket_sample_64b/releases/20200404100412/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require_relative'
+  config.ru:4:in `block in <main>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `instance_eval'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/rack-2.2.2/lib/rack/builder.rb:125:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `eval'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn.rb:56:in `block in builder'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:795:in `build_app!'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:139:in `start'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+  /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<top (required)>'

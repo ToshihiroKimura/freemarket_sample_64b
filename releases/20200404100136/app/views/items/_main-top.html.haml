@@ -1,0 +1,127 @@
+.image1
+  =image_tag("bg-mainVisual-pict_pc.jpg", class: "image1--img")
+  %p.image1--text1
+    人生を変えるフリマアプリ
+  %p.image1--text2
+    FURIMAは誰でもかんたんに出品・購入できる
+    %br
+      フリマアプリです
+  .image1--badge
+    =image_tag("Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg",width: "42%", class: "image1--badge__AppStore")
+    =image_tag("google-play-badge.png", width: "59%",class: "image1--badge__Google")
+.image2
+  %h2.image2__title
+    FURIMAが選ばれる3つの理由
+  %ul.image2__box
+    %li.image2__box__images
+      =image_tag("pict-reason-01.jpg", class: "image2__box__images--1") 
+      %h2
+        %span 
+          3分
+        ですぐに出品
+      %p 
+        スマホで入力するだけで簡単に出品できる!
+    %li.image2__box__images
+      =image_tag("pict-reason-02.jpg", class: "image2__box__images--2")
+      %h2
+        %span 
+          シンプル
+        で使いやすい
+      %p 
+        めんどくさい入力は必要なく、検索も購入もスムーズ！
+    %li.image2__box__images
+      =image_tag("pict-reason-03.jpg", class: "image2__box__images--3")
+      %h2
+        手数料
+        %span 
+          業界最安
+      %p.text--3
+        最大3%でお得に出品&購入！
+.image3
+  =image_tag("bg-topMiddleDl-pict.jpg", class: "image3--image")
+  %p.image3--text1
+    会員数日本一位
+  %p.image3--text2
+    FURIMAは、フリマアプリで最も人気。
+    %br
+      出品・購入回数も業界最多です！
+      %br
+        ほしかったあの商品に出会えるかもしれません。
+  .image3--badge
+    =image_tag("Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg", class: "image3--badge__AppStore")
+    =image_tag("google-play-badge.png", class: "image3--badge__Google")
+.image4
+  %h2.image4__title
+    FURIMAの特徴
+  %ul.image4__box
+    %li.image4__box__images
+      =image_tag("icon-01.png",alt: "", class: "image4__box__images--1") 
+      %h2
+        簡単に売り買いできる
+      %p 
+        スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
+    %li.image4__box__images
+      =image_tag("icon-03.png",alt: "", class: "image4__box__images--2")
+      %h2
+        売上金は即日振込みに対応
+      %p 
+        午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします!
+    %li.image4__box__images
+      =image_tag("icon-04.png",alt: "", class: "image4__box__images--3")
+      %h2
+        様々な支払いに対応
+      %p
+        お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
+.items
+  .items__title1
+    %h2
+      ピックアップカテゴリー
+    %p
+      新規投稿商品
+  %ul.items__list1
+    - if @items.present?
+      -@items.each do |item| 
+        = link_to item_path(item.id), class: "items__list1__category" do
+          .items__list1__category__images 
+            -item.images.each do |image|
+              =image_tag item.images, alt: "" 
+          .items__list1__category--data1
+            .items__list1__category--data1__name
+              %p 
+                =item.name
+            .items__list1__category--data1__content
+              %li.items__list1__category--data1__content--price
+                =item.price 
+                円
+              %li.items__list1__category--data1__content--star
+                %i.fas.fa-star
+                %p.items__list1__category--data1__content--count
+                  0
+            .items__list1__category--data1__tax
+              %p
+                (税込)
+  .items__title2
+    %h2
+      ピックアップブランド
+    %p
+      アーカイバ
+  %ul.items__list2
+    -@items.each do |item| 
+      = link_to item_path(item.id), class: "items__list1__category" do
+        .items__list1__category__images 
+          -item.images.each do |image|
+            =image_tag item.images, alt: ""
+        .items__list2__brand--data2
+          .items__list2__brand--data2__name
+            %p 
+              =item.name
+          .items__list2__brand--data2__content
+            %li.items__list2__brand--data2__content--price
+              3000
+            %li.items__list2__brand--data2__content--star
+              %i.fas.fa-star
+              %p.items__list2__brand--data2__content--count
+                0
+          .items__list2__brand--data1__tax
+            %p
+              (税込)

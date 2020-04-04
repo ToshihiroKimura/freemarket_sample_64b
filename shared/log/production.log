@@ -1,0 +1,775 @@
+D, [2020-04-04T05:15:27.242621 #17112] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T05:15:27.243820 #17112] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T05:15:27.294785 #17112] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (37.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2020-04-04T05:15:27.313148 #17112] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T05:15:27.316786 #17112] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T05:15:27.317702 #17112] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T05:15:27.318352 #17112] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m
+D, [2020-04-04T05:50:51.232478 #18333] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T05:50:51.232739 #18333] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T05:50:51.241016 #18333] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2020-04-04T05:50:51.248037 #18333] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T05:50:51.250936 #18333] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T05:50:51.251833 #18333] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T05:50:51.252041 #18333] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m
+I, [2020-04-04T05:51:37.286002 #18528]  INFO -- : [bcd1e276-bd60-403d-9b3f-a624232640b5] Started GET "/" for 175.177.41.43 at 2020-04-04 05:51:37 +0000
+I, [2020-04-04T05:51:37.297671 #18528]  INFO -- : [bcd1e276-bd60-403d-9b3f-a624232640b5] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:51:37.304345 #18528]  INFO -- : [bcd1e276-bd60-403d-9b3f-a624232640b5] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:51:37.304589 #18528]  INFO -- : [bcd1e276-bd60-403d-9b3f-a624232640b5] Completed 401 Unauthorized in 7ms
+I, [2020-04-04T05:51:45.557298 #18528]  INFO -- : [d49e0165-1d7b-4609-8455-858596c71b65] Started GET "/" for 175.177.41.43 at 2020-04-04 05:51:45 +0000
+I, [2020-04-04T05:51:45.557997 #18528]  INFO -- : [d49e0165-1d7b-4609-8455-858596c71b65] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:51:45.558372 #18528]  INFO -- : [d49e0165-1d7b-4609-8455-858596c71b65] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:51:45.558464 #18528]  INFO -- : [d49e0165-1d7b-4609-8455-858596c71b65] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:51:50.104998 #18528]  INFO -- : [5f9e938b-5d20-4c0a-afbd-7dd4a05a5768] Started GET "/" for 175.177.41.43 at 2020-04-04 05:51:50 +0000
+I, [2020-04-04T05:51:50.105584 #18528]  INFO -- : [5f9e938b-5d20-4c0a-afbd-7dd4a05a5768] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:51:50.105923 #18528]  INFO -- : [5f9e938b-5d20-4c0a-afbd-7dd4a05a5768] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:51:50.106018 #18528]  INFO -- : [5f9e938b-5d20-4c0a-afbd-7dd4a05a5768] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:54:54.259700 #18528]  INFO -- : [744a8b7f-49d5-4a8b-959b-9fc1078969ca] Started GET "/" for 175.177.41.43 at 2020-04-04 05:54:54 +0000
+I, [2020-04-04T05:54:54.260345 #18528]  INFO -- : [744a8b7f-49d5-4a8b-959b-9fc1078969ca] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:54:54.260581 #18528]  INFO -- : [744a8b7f-49d5-4a8b-959b-9fc1078969ca] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:54:54.260671 #18528]  INFO -- : [744a8b7f-49d5-4a8b-959b-9fc1078969ca] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:20.361547 #18528]  INFO -- : [19098c53-e7dd-4395-9a21-fdd7bbd19bbf] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:20 +0000
+I, [2020-04-04T05:55:20.362144 #18528]  INFO -- : [19098c53-e7dd-4395-9a21-fdd7bbd19bbf] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:20.362514 #18528]  INFO -- : [19098c53-e7dd-4395-9a21-fdd7bbd19bbf] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:20.362606 #18528]  INFO -- : [19098c53-e7dd-4395-9a21-fdd7bbd19bbf] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:26.226034 #18528]  INFO -- : [c56362f2-1860-4742-8067-8afaefe674b0] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:26 +0000
+I, [2020-04-04T05:55:26.226678 #18528]  INFO -- : [c56362f2-1860-4742-8067-8afaefe674b0] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:26.226933 #18528]  INFO -- : [c56362f2-1860-4742-8067-8afaefe674b0] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:26.227025 #18528]  INFO -- : [c56362f2-1860-4742-8067-8afaefe674b0] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:27.469541 #18528]  INFO -- : [f0fd35d4-6b1e-4bfa-847c-da3e2247bd47] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:27 +0000
+I, [2020-04-04T05:55:27.470287 #18528]  INFO -- : [f0fd35d4-6b1e-4bfa-847c-da3e2247bd47] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:27.470531 #18528]  INFO -- : [f0fd35d4-6b1e-4bfa-847c-da3e2247bd47] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:27.470623 #18528]  INFO -- : [f0fd35d4-6b1e-4bfa-847c-da3e2247bd47] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:31.759058 #18528]  INFO -- : [55cb4408-6aed-42cd-9aa7-8a5296ae41f5] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:31 +0000
+I, [2020-04-04T05:55:31.759712 #18528]  INFO -- : [55cb4408-6aed-42cd-9aa7-8a5296ae41f5] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:31.759954 #18528]  INFO -- : [55cb4408-6aed-42cd-9aa7-8a5296ae41f5] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:31.760043 #18528]  INFO -- : [55cb4408-6aed-42cd-9aa7-8a5296ae41f5] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:34.895029 #18528]  INFO -- : [b9b0bd12-b82f-4163-8982-974c9396806f] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:34 +0000
+I, [2020-04-04T05:55:34.895676 #18528]  INFO -- : [b9b0bd12-b82f-4163-8982-974c9396806f] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:34.895932 #18528]  INFO -- : [b9b0bd12-b82f-4163-8982-974c9396806f] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:34.896021 #18528]  INFO -- : [b9b0bd12-b82f-4163-8982-974c9396806f] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:55:36.620192 #18528]  INFO -- : [736dde2a-55e4-4d85-91ab-0e20417da519] Started GET "/" for 175.177.41.43 at 2020-04-04 05:55:36 +0000
+I, [2020-04-04T05:55:36.620834 #18528]  INFO -- : [736dde2a-55e4-4d85-91ab-0e20417da519] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:55:36.621083 #18528]  INFO -- : [736dde2a-55e4-4d85-91ab-0e20417da519] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:55:36.621179 #18528]  INFO -- : [736dde2a-55e4-4d85-91ab-0e20417da519] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:56:21.217075 #18528]  INFO -- : [097f7046-0fab-4915-b5a2-4f3c7f37339b] Started GET "/" for 175.177.41.43 at 2020-04-04 05:56:21 +0000
+I, [2020-04-04T05:56:21.217809 #18528]  INFO -- : [097f7046-0fab-4915-b5a2-4f3c7f37339b] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:56:21.218076 #18528]  INFO -- : [097f7046-0fab-4915-b5a2-4f3c7f37339b] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:56:21.218165 #18528]  INFO -- : [097f7046-0fab-4915-b5a2-4f3c7f37339b] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:56:24.432654 #18528]  INFO -- : [fe0713e2-2b84-4621-bbad-6cef115b2790] Started GET "/" for 175.177.41.43 at 2020-04-04 05:56:24 +0000
+I, [2020-04-04T05:56:24.433329 #18528]  INFO -- : [fe0713e2-2b84-4621-bbad-6cef115b2790] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:56:24.433608 #18528]  INFO -- : [fe0713e2-2b84-4621-bbad-6cef115b2790] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:56:24.433696 #18528]  INFO -- : [fe0713e2-2b84-4621-bbad-6cef115b2790] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:56:41.318562 #18528]  INFO -- : [59df9b5d-1465-4706-a3bd-5d267b1ad1c1] Started GET "/" for 175.177.41.43 at 2020-04-04 05:56:41 +0000
+I, [2020-04-04T05:56:41.319288 #18528]  INFO -- : [59df9b5d-1465-4706-a3bd-5d267b1ad1c1] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:56:41.319538 #18528]  INFO -- : [59df9b5d-1465-4706-a3bd-5d267b1ad1c1] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:56:41.319635 #18528]  INFO -- : [59df9b5d-1465-4706-a3bd-5d267b1ad1c1] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:58:47.837292 #18528]  INFO -- : [d466fc6c-dae1-4f16-ae38-9d1920b88995] Started GET "/" for 175.177.41.43 at 2020-04-04 05:58:47 +0000
+I, [2020-04-04T05:58:47.837962 #18528]  INFO -- : [d466fc6c-dae1-4f16-ae38-9d1920b88995] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:58:47.838201 #18528]  INFO -- : [d466fc6c-dae1-4f16-ae38-9d1920b88995] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:58:47.838296 #18528]  INFO -- : [d466fc6c-dae1-4f16-ae38-9d1920b88995] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:58:51.655847 #18528]  INFO -- : [00cb1b04-3b65-48f8-bf87-c51163c29d43] Started GET "/" for 175.177.41.43 at 2020-04-04 05:58:51 +0000
+I, [2020-04-04T05:58:51.656560 #18528]  INFO -- : [00cb1b04-3b65-48f8-bf87-c51163c29d43] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:58:51.656817 #18528]  INFO -- : [00cb1b04-3b65-48f8-bf87-c51163c29d43] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:58:51.656907 #18528]  INFO -- : [00cb1b04-3b65-48f8-bf87-c51163c29d43] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:58:53.456843 #18528]  INFO -- : [7d50f174-2a5e-4699-8417-135a077d810c] Started GET "/" for 175.177.41.43 at 2020-04-04 05:58:53 +0000
+I, [2020-04-04T05:58:53.457542 #18528]  INFO -- : [7d50f174-2a5e-4699-8417-135a077d810c] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:58:53.457893 #18528]  INFO -- : [7d50f174-2a5e-4699-8417-135a077d810c] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:58:53.457997 #18528]  INFO -- : [7d50f174-2a5e-4699-8417-135a077d810c] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:14.522076 #18528]  INFO -- : [72dad3a7-7d3e-4bc1-8403-323de0829213] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:14 +0000
+I, [2020-04-04T05:59:14.522884 #18528]  INFO -- : [72dad3a7-7d3e-4bc1-8403-323de0829213] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:14.523133 #18528]  INFO -- : [72dad3a7-7d3e-4bc1-8403-323de0829213] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:14.523237 #18528]  INFO -- : [72dad3a7-7d3e-4bc1-8403-323de0829213] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:20.205105 #18528]  INFO -- : [2dc1225e-fb58-4382-93aa-aeaeb59efb18] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:20 +0000
+I, [2020-04-04T05:59:20.205776 #18528]  INFO -- : [2dc1225e-fb58-4382-93aa-aeaeb59efb18] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:20.206045 #18528]  INFO -- : [2dc1225e-fb58-4382-93aa-aeaeb59efb18] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:20.206138 #18528]  INFO -- : [2dc1225e-fb58-4382-93aa-aeaeb59efb18] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:23.967579 #18528]  INFO -- : [767b8080-cd73-4f52-996e-61a88a45499f] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:23 +0000
+I, [2020-04-04T05:59:23.968347 #18528]  INFO -- : [767b8080-cd73-4f52-996e-61a88a45499f] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:23.968602 #18528]  INFO -- : [767b8080-cd73-4f52-996e-61a88a45499f] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:23.968705 #18528]  INFO -- : [767b8080-cd73-4f52-996e-61a88a45499f] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:24.684625 #18528]  INFO -- : [51482036-9ff4-4144-997a-1854799ac47c] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:24 +0000
+I, [2020-04-04T05:59:24.685297 #18528]  INFO -- : [51482036-9ff4-4144-997a-1854799ac47c] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:24.685547 #18528]  INFO -- : [51482036-9ff4-4144-997a-1854799ac47c] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:24.685636 #18528]  INFO -- : [51482036-9ff4-4144-997a-1854799ac47c] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:28.793599 #18528]  INFO -- : [58627f1a-6e59-4162-9e69-2d62cea49f76] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:28 +0000
+I, [2020-04-04T05:59:28.794322 #18528]  INFO -- : [58627f1a-6e59-4162-9e69-2d62cea49f76] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:28.794557 #18528]  INFO -- : [58627f1a-6e59-4162-9e69-2d62cea49f76] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:28.794667 #18528]  INFO -- : [58627f1a-6e59-4162-9e69-2d62cea49f76] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T05:59:57.889589 #18528]  INFO -- : [ff488678-8acb-4601-bdc5-b1eba749baf7] Started GET "/" for 175.177.41.43 at 2020-04-04 05:59:57 +0000
+I, [2020-04-04T05:59:57.890273 #18528]  INFO -- : [ff488678-8acb-4601-bdc5-b1eba749baf7] Processing by ItemsController#index as HTML
+I, [2020-04-04T05:59:57.890512 #18528]  INFO -- : [ff488678-8acb-4601-bdc5-b1eba749baf7] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T05:59:57.890602 #18528]  INFO -- : [ff488678-8acb-4601-bdc5-b1eba749baf7] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:00:00.699913 #18528]  INFO -- : [eb6c75b4-4a06-4a36-871e-f7d4aee4c471] Started GET "/" for 175.177.41.43 at 2020-04-04 06:00:00 +0000
+I, [2020-04-04T06:00:00.700696 #18528]  INFO -- : [eb6c75b4-4a06-4a36-871e-f7d4aee4c471] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:00:00.700948 #18528]  INFO -- : [eb6c75b4-4a06-4a36-871e-f7d4aee4c471] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:00:00.701066 #18528]  INFO -- : [eb6c75b4-4a06-4a36-871e-f7d4aee4c471] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:00:03.586600 #18528]  INFO -- : [b2ce1a99-dfdb-4d7d-92e8-3606ddc42cc7] Started GET "/" for 175.177.41.43 at 2020-04-04 06:00:03 +0000
+I, [2020-04-04T06:00:03.587256 #18528]  INFO -- : [b2ce1a99-dfdb-4d7d-92e8-3606ddc42cc7] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:00:03.587510 #18528]  INFO -- : [b2ce1a99-dfdb-4d7d-92e8-3606ddc42cc7] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:00:03.587600 #18528]  INFO -- : [b2ce1a99-dfdb-4d7d-92e8-3606ddc42cc7] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:00:59.190168 #18528]  INFO -- : [afdcb414-5bd2-419f-abcc-10bafdbcc0f0] Started GET "/" for 175.177.41.43 at 2020-04-04 06:00:59 +0000
+I, [2020-04-04T06:00:59.190856 #18528]  INFO -- : [afdcb414-5bd2-419f-abcc-10bafdbcc0f0] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:00:59.191118 #18528]  INFO -- : [afdcb414-5bd2-419f-abcc-10bafdbcc0f0] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:00:59.191212 #18528]  INFO -- : [afdcb414-5bd2-419f-abcc-10bafdbcc0f0] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:01:00.343622 #18528]  INFO -- : [b0a74139-3178-4d78-8d25-d555400e50ea] Started GET "/" for 175.177.41.43 at 2020-04-04 06:01:00 +0000
+I, [2020-04-04T06:01:00.344272 #18528]  INFO -- : [b0a74139-3178-4d78-8d25-d555400e50ea] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:01:00.344514 #18528]  INFO -- : [b0a74139-3178-4d78-8d25-d555400e50ea] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:01:00.344605 #18528]  INFO -- : [b0a74139-3178-4d78-8d25-d555400e50ea] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:01:18.861691 #18528]  INFO -- : [9ab90f1b-6bf7-40f8-9f45-47a8ac75f28e] Started GET "/" for 175.177.41.43 at 2020-04-04 06:01:18 +0000
+I, [2020-04-04T06:01:18.862397 #18528]  INFO -- : [9ab90f1b-6bf7-40f8-9f45-47a8ac75f28e] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:01:18.862642 #18528]  INFO -- : [9ab90f1b-6bf7-40f8-9f45-47a8ac75f28e] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:01:18.862732 #18528]  INFO -- : [9ab90f1b-6bf7-40f8-9f45-47a8ac75f28e] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:01:22.943260 #18528]  INFO -- : [fde5d3e2-f6ae-4b56-bbf7-60f688753ab2] Started GET "/" for 175.177.41.43 at 2020-04-04 06:01:22 +0000
+I, [2020-04-04T06:01:22.943841 #18528]  INFO -- : [fde5d3e2-f6ae-4b56-bbf7-60f688753ab2] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:01:22.944096 #18528]  INFO -- : [fde5d3e2-f6ae-4b56-bbf7-60f688753ab2] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:01:22.944184 #18528]  INFO -- : [fde5d3e2-f6ae-4b56-bbf7-60f688753ab2] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:01:24.543674 #18528]  INFO -- : [19dfe6a4-e488-4c62-9118-411752079c13] Started GET "/" for 175.177.41.43 at 2020-04-04 06:01:24 +0000
+I, [2020-04-04T06:01:24.544330 #18528]  INFO -- : [19dfe6a4-e488-4c62-9118-411752079c13] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:01:24.544659 #18528]  INFO -- : [19dfe6a4-e488-4c62-9118-411752079c13] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:01:24.544751 #18528]  INFO -- : [19dfe6a4-e488-4c62-9118-411752079c13] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:02:03.490561 #18528]  INFO -- : [28cbfca5-62c7-4ab4-91a2-b44ad60528f8] Started GET "/" for 175.177.41.43 at 2020-04-04 06:02:03 +0000
+I, [2020-04-04T06:02:03.491155 #18528]  INFO -- : [28cbfca5-62c7-4ab4-91a2-b44ad60528f8] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:02:03.491400 #18528]  INFO -- : [28cbfca5-62c7-4ab4-91a2-b44ad60528f8] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:02:03.491491 #18528]  INFO -- : [28cbfca5-62c7-4ab4-91a2-b44ad60528f8] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:02:06.439637 #18528]  INFO -- : [cf66b365-530a-4b83-89ea-ebe9821356e0] Started GET "/" for 175.177.41.43 at 2020-04-04 06:02:06 +0000
+I, [2020-04-04T06:02:06.440221 #18528]  INFO -- : [cf66b365-530a-4b83-89ea-ebe9821356e0] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:02:06.440537 #18528]  INFO -- : [cf66b365-530a-4b83-89ea-ebe9821356e0] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:02:06.440627 #18528]  INFO -- : [cf66b365-530a-4b83-89ea-ebe9821356e0] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:02:07.831140 #18528]  INFO -- : [e717fc7a-6c77-44bc-b672-25e0dd523ea6] Started GET "/" for 175.177.41.43 at 2020-04-04 06:02:07 +0000
+I, [2020-04-04T06:02:07.831723 #18528]  INFO -- : [e717fc7a-6c77-44bc-b672-25e0dd523ea6] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:02:07.831969 #18528]  INFO -- : [e717fc7a-6c77-44bc-b672-25e0dd523ea6] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:02:07.832171 #18528]  INFO -- : [e717fc7a-6c77-44bc-b672-25e0dd523ea6] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:05:53.111388 #18528]  INFO -- : [7961cc56-7f37-4e25-8c10-e00a2bcc6040] Started GET "/" for 175.177.41.43 at 2020-04-04 06:05:53 +0000
+I, [2020-04-04T06:05:53.111977 #18528]  INFO -- : [7961cc56-7f37-4e25-8c10-e00a2bcc6040] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:05:53.112291 #18528]  INFO -- : [7961cc56-7f37-4e25-8c10-e00a2bcc6040] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:05:53.112381 #18528]  INFO -- : [7961cc56-7f37-4e25-8c10-e00a2bcc6040] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:05:56.328505 #18528]  INFO -- : [fdff2609-3e6a-4bd4-84cb-f90605806e76] Started GET "/" for 175.177.41.43 at 2020-04-04 06:05:56 +0000
+I, [2020-04-04T06:05:56.329249 #18528]  INFO -- : [fdff2609-3e6a-4bd4-84cb-f90605806e76] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:05:56.329526 #18528]  INFO -- : [fdff2609-3e6a-4bd4-84cb-f90605806e76] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:05:56.329622 #18528]  INFO -- : [fdff2609-3e6a-4bd4-84cb-f90605806e76] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:28:38.724532 #18528]  INFO -- : [40b35cdc-2f2a-4797-a7b1-019c4ccc3ddd] Started GET "/" for 175.177.41.43 at 2020-04-04 06:28:38 +0000
+I, [2020-04-04T06:28:38.725208 #18528]  INFO -- : [40b35cdc-2f2a-4797-a7b1-019c4ccc3ddd] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:28:38.725469 #18528]  INFO -- : [40b35cdc-2f2a-4797-a7b1-019c4ccc3ddd] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:28:38.725569 #18528]  INFO -- : [40b35cdc-2f2a-4797-a7b1-019c4ccc3ddd] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:28:42.147640 #18528]  INFO -- : [e28acaea-a8e5-4866-a3f2-56ebd8b2e011] Started GET "/" for 175.177.41.43 at 2020-04-04 06:28:42 +0000
+I, [2020-04-04T06:28:42.148360 #18528]  INFO -- : [e28acaea-a8e5-4866-a3f2-56ebd8b2e011] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:28:42.148602 #18528]  INFO -- : [e28acaea-a8e5-4866-a3f2-56ebd8b2e011] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:28:42.148697 #18528]  INFO -- : [e28acaea-a8e5-4866-a3f2-56ebd8b2e011] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:28:42.750645 #18528]  INFO -- : [860daec9-0128-461a-b2df-19a717cd9d11] Started GET "/" for 175.177.41.43 at 2020-04-04 06:28:42 +0000
+I, [2020-04-04T06:28:42.751334 #18528]  INFO -- : [860daec9-0128-461a-b2df-19a717cd9d11] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:28:42.751575 #18528]  INFO -- : [860daec9-0128-461a-b2df-19a717cd9d11] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:28:42.751667 #18528]  INFO -- : [860daec9-0128-461a-b2df-19a717cd9d11] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:28:46.141148 #18528]  INFO -- : [81de309a-4a07-4af7-b09e-a08989028544] Started GET "/" for 175.177.41.43 at 2020-04-04 06:28:46 +0000
+I, [2020-04-04T06:28:46.141968 #18528]  INFO -- : [81de309a-4a07-4af7-b09e-a08989028544] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:28:46.142231 #18528]  INFO -- : [81de309a-4a07-4af7-b09e-a08989028544] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:28:46.142344 #18528]  INFO -- : [81de309a-4a07-4af7-b09e-a08989028544] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:28:47.345118 #18528]  INFO -- : [40bfaa0e-2c10-47bf-bd1f-d81d64b73fea] Started GET "/" for 175.177.41.43 at 2020-04-04 06:28:47 +0000
+I, [2020-04-04T06:28:47.345719 #18528]  INFO -- : [40bfaa0e-2c10-47bf-bd1f-d81d64b73fea] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:28:47.345987 #18528]  INFO -- : [40bfaa0e-2c10-47bf-bd1f-d81d64b73fea] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:28:47.346074 #18528]  INFO -- : [40bfaa0e-2c10-47bf-bd1f-d81d64b73fea] Completed 401 Unauthorized in 0ms
+D, [2020-04-04T06:29:30.655816 #19896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T06:29:30.656096 #19896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T06:29:30.664458 #19896] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2020-04-04T06:29:30.670902 #19896] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T06:29:30.673799 #19896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:29:30.674661 #19896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T06:29:30.674908 #19896] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m
+I, [2020-04-04T06:29:52.842825 #20042]  INFO -- : [e77f1be0-fe58-4be1-a131-67ba2cd5d98a] Started GET "/" for 175.177.41.43 at 2020-04-04 06:29:52 +0000
+I, [2020-04-04T06:29:52.851486 #20042]  INFO -- : [e77f1be0-fe58-4be1-a131-67ba2cd5d98a] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:29:52.858179 #20042]  INFO -- : [e77f1be0-fe58-4be1-a131-67ba2cd5d98a] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:29:52.858397 #20042]  INFO -- : [e77f1be0-fe58-4be1-a131-67ba2cd5d98a] Completed 401 Unauthorized in 7ms
+I, [2020-04-04T06:29:56.059884 #20042]  INFO -- : [82c62ac8-2699-4e7e-adac-361bba4d1ddc] Started GET "/" for 175.177.41.43 at 2020-04-04 06:29:56 +0000
+I, [2020-04-04T06:29:56.060593 #20042]  INFO -- : [82c62ac8-2699-4e7e-adac-361bba4d1ddc] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:29:56.060902 #20042]  INFO -- : [82c62ac8-2699-4e7e-adac-361bba4d1ddc] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:29:56.061000 #20042]  INFO -- : [82c62ac8-2699-4e7e-adac-361bba4d1ddc] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:30:05.806404 #20042]  INFO -- : [c78cbb9d-fba6-4b4c-9607-3846faaad139] Started GET "/" for 175.177.41.43 at 2020-04-04 06:30:05 +0000
+I, [2020-04-04T06:30:05.807066 #20042]  INFO -- : [c78cbb9d-fba6-4b4c-9607-3846faaad139] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:30:05.807308 #20042]  INFO -- : [c78cbb9d-fba6-4b4c-9607-3846faaad139] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:30:05.807397 #20042]  INFO -- : [c78cbb9d-fba6-4b4c-9607-3846faaad139] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:31:07.098461 #20042]  INFO -- : [0141cb9a-4e6c-4bfc-8bf6-5348564c07aa] Started GET "/" for 175.177.41.43 at 2020-04-04 06:31:07 +0000
+I, [2020-04-04T06:31:07.099119 #20042]  INFO -- : [0141cb9a-4e6c-4bfc-8bf6-5348564c07aa] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:31:07.099357 #20042]  INFO -- : [0141cb9a-4e6c-4bfc-8bf6-5348564c07aa] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:31:07.099453 #20042]  INFO -- : [0141cb9a-4e6c-4bfc-8bf6-5348564c07aa] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:31:10.291363 #20042]  INFO -- : [a11141a8-464c-48e6-b303-16ca78d9c807] Started GET "/" for 175.177.41.43 at 2020-04-04 06:31:10 +0000
+I, [2020-04-04T06:31:10.292060 #20042]  INFO -- : [a11141a8-464c-48e6-b303-16ca78d9c807] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:31:10.292316 #20042]  INFO -- : [a11141a8-464c-48e6-b303-16ca78d9c807] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:31:10.292406 #20042]  INFO -- : [a11141a8-464c-48e6-b303-16ca78d9c807] Completed 401 Unauthorized in 0ms
+I, [2020-04-04T06:31:12.168913 #20042]  INFO -- : [238c0d37-d514-4a00-b02f-9d24f28b7cdd] Started GET "/" for 175.177.41.43 at 2020-04-04 06:31:12 +0000
+I, [2020-04-04T06:31:12.169584 #20042]  INFO -- : [238c0d37-d514-4a00-b02f-9d24f28b7cdd] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:31:12.169825 #20042]  INFO -- : [238c0d37-d514-4a00-b02f-9d24f28b7cdd] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:31:12.169937 #20042]  INFO -- : [238c0d37-d514-4a00-b02f-9d24f28b7cdd] Completed 401 Unauthorized in 0ms
+D, [2020-04-04T06:32:34.686696 #21045] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T06:32:34.686982 #21045] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T06:32:34.695207 #21045] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2020-04-04T06:32:34.701599 #21045] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T06:32:34.704365 #21045] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:32:34.705256 #21045] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T06:32:34.705481 #21045] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m
+I, [2020-04-04T06:33:51.908922 #21238]  INFO -- : [76009267-e129-4715-a424-4d5d7db5f3aa] Started GET "/" for 175.177.41.43 at 2020-04-04 06:33:51 +0000
+I, [2020-04-04T06:33:51.917262 #21238]  INFO -- : [76009267-e129-4715-a424-4d5d7db5f3aa] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:33:51.923904 #21238]  INFO -- : [76009267-e129-4715-a424-4d5d7db5f3aa] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T06:33:51.924113 #21238]  INFO -- : [76009267-e129-4715-a424-4d5d7db5f3aa] Completed 401 Unauthorized in 7ms
+I, [2020-04-04T06:34:01.822404 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc] Started GET "/" for 175.177.41.43 at 2020-04-04 06:34:01 +0000
+I, [2020-04-04T06:34:01.823101 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:34:01.827311 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendering items/index.html.haml within layouts/application
+I, [2020-04-04T06:34:01.845325 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendered items/_main-header.html.haml (8.5ms)
+D, [2020-04-04T06:34:01.877912 #21238] DEBUG -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   [1m[36mItem Load (17.1ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T06:34:01.880395 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendered items/_main-top.html.haml (34.4ms)
+I, [2020-04-04T06:34:01.886407 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendered items/_main-footer.html.haml (5.4ms)
+I, [2020-04-04T06:34:01.888605 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendered items/_camera-btn.html.haml (1.6ms)
+I, [2020-04-04T06:34:01.888678 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc]   Rendered items/index.html.haml within layouts/application (61.3ms)
+I, [2020-04-04T06:34:01.892492 #21238]  INFO -- : [5d259566-8cd4-4c72-9104-5f11ddfef2fc] Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 17.7ms)
+I, [2020-04-04T06:34:08.823858 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85] Started GET "/users/sign_in" for 175.177.41.43 at 2020-04-04 06:34:08 +0000
+I, [2020-04-04T06:34:08.825326 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T06:34:08.851593 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T06:34:08.859001 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85]   Rendered devise/shared/_header.html.haml (1.9ms)
+I, [2020-04-04T06:34:08.865187 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85]   Rendered devise/shared/_footer.html.haml (2.3ms)
+I, [2020-04-04T06:34:08.865261 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85]   Rendered devise/sessions/new.html.haml within layouts/application (13.6ms)
+I, [2020-04-04T06:34:08.866040 #21238]  INFO -- : [c8f2f39f-485b-4340-9b81-336f2dd9ef85] Completed 200 OK in 41ms (Views: 17.5ms | ActiveRecord: 9.8ms)
+I, [2020-04-04T06:34:14.248898 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275] Started GET "/users/sign_up" for 175.177.41.43 at 2020-04-04 06:34:14 +0000
+I, [2020-04-04T06:34:14.250303 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275] Processing by Users::RegistrationsController#new as HTML
+I, [2020-04-04T06:34:14.253935 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275]   Rendering devise/registrations/new.html.haml within layouts/application
+I, [2020-04-04T06:34:14.262953 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T06:34:14.276001 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T06:34:14.276076 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275]   Rendered devise/registrations/new.html.haml within layouts/application (22.1ms)
+I, [2020-04-04T06:34:14.276761 #21238]  INFO -- : [e94c3a97-959e-4d70-9b8b-d2084ed4f275] Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T06:34:45.178442 #21238]  INFO -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34] Started POST "/users" for 175.177.41.43 at 2020-04-04 06:34:45 +0000
+I, [2020-04-04T06:34:45.179305 #21238]  INFO -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34] Processing by Users::RegistrationsController#create as HTML
+I, [2020-04-04T06:34:45.179392 #21238]  INFO -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmn3iH8S+MGL/siIuALeT6QEiKOo+PpEl6xjXshyWIkSHSbJhGOo6bouTTras1m+iLd+sh4pe5n9Nica7N9cng==", "user"=>{"nickname"=>"test", "email"=>"test@gmail.com", "password"=>"[FILTERED]", "last_name"=>"山田", "first_name"=>"彩", "last_name_kana"=>"ヤマダ", "first_name_kana"=>"アヤ", "birthday(1i)"=>"1984", "birthday(2i)"=>"3", "birthday(3i)"=>"30"}, "commit"=>"次へ"}
+D, [2020-04-04T06:34:45.346196 #21238] DEBUG -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:34:45.351955 #21238] DEBUG -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@gmail.com' LIMIT 1[0m
+D, [2020-04-04T06:34:45.352965 #21238] DEBUG -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test@gmail.com' LIMIT 1[0m
+D, [2020-04-04T06:34:45.357220 #21238] DEBUG -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `users` (`last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('山田', '彩', 'ヤマダ', 'アヤ', 'test', '1984-03-30', 'test@gmail.com', '$2a$11$56hlO//aZVuogz0iar54V.A9DPx7pLyJZFWIV3vyeqv.q7zmqiLYS', '2020-04-04 06:34:45', '2020-04-04 06:34:45')[0m
+D, [2020-04-04T06:34:45.361232 #21238] DEBUG -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34]   [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T06:34:45.365748 #21238]  INFO -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34] Redirected to http://18.180.219.144/addresses/new.1
+I, [2020-04-04T06:34:45.365914 #21238]  INFO -- : [a2a67cb6-a8e4-4451-982a-f33f9012bd34] Completed 302 Found in 186ms (ActiveRecord: 7.2ms)
+I, [2020-04-04T06:34:45.382202 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a] Started GET "/addresses/new.1" for 175.177.41.43 at 2020-04-04 06:34:45 +0000
+I, [2020-04-04T06:34:45.383380 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a] Processing by AddressesController#new as 
+D, [2020-04-04T06:34:45.385817 #21238] DEBUG -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T06:34:45.409286 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a]   Rendering addresses/new.html.haml within layouts/application
+I, [2020-04-04T06:34:45.419872 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a]   Rendered devise/shared/_header.html.haml (1.9ms)
+I, [2020-04-04T06:34:45.427264 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a]   Rendered devise/shared/_footer.html.haml (2.6ms)
+I, [2020-04-04T06:34:45.427349 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a]   Rendered addresses/new.html.haml within layouts/application (18.0ms)
+I, [2020-04-04T06:34:45.428034 #21238]  INFO -- : [1d6582f4-d03b-49ac-94ff-a7d5e29b8c5a] Completed 200 OK in 45ms (Views: 19.6ms | ActiveRecord: 10.5ms)
+I, [2020-04-04T06:34:51.933358 #21238]  INFO -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03] Started POST "/addresses" for 175.177.41.43 at 2020-04-04 06:34:51 +0000
+I, [2020-04-04T06:34:51.934140 #21238]  INFO -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03] Processing by AddressesController#create as HTML
+I, [2020-04-04T06:34:51.934219 #21238]  INFO -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"USWvOT4/LlMC69O87QFZko0cJnbn755xbwgI87ICdHyN5tNzSujY8TAe+aWI99LiC2L29NehO2ieWJ0WTunssA==", "address"=>{"postcode"=>"", "prefecture"=>"", "city"=>"", "block"=>"", "building"=>"", "phone_number"=>""}, "commit"=>"登録する"}
+D, [2020-04-04T06:34:51.935724 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2020-04-04T06:34:51.936725 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:34:51.940884 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+D, [2020-04-04T06:34:51.944327 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO `addresses` (`prefecture`, `city`, `block`, `building`, `phone_number`, `user_id`, `created_at`, `updated_at`) VALUES ('', '', '', '', '', 1, '2020-04-04 06:34:51', '2020-04-04 06:34:51')[0m
+D, [2020-04-04T06:34:51.946777 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T06:34:51.946981 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:34:51.947511 #21238] DEBUG -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T06:34:51.947718 #21238]  INFO -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03] Redirected to http://18.180.219.144/
+I, [2020-04-04T06:34:51.947833 #21238]  INFO -- : [3b6b4942-985c-4294-944f-cc6b46cb1d03] Completed 302 Found in 14ms (ActiveRecord: 5.4ms)
+I, [2020-04-04T06:34:51.962185 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9] Started GET "/" for 175.177.41.43 at 2020-04-04 06:34:51 +0000
+I, [2020-04-04T06:34:51.962710 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:34:51.963584 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T06:34:51.965071 #21238] DEBUG -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T06:34:51.965762 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendered items/_main-header.html.haml (2.0ms)
+D, [2020-04-04T06:34:51.966868 #21238] DEBUG -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T06:34:51.966995 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendered items/_main-top.html.haml (1.1ms)
+I, [2020-04-04T06:34:51.967647 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T06:34:51.967954 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T06:34:51.968019 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9]   Rendered items/index.html.haml within layouts/application (4.4ms)
+I, [2020-04-04T06:34:51.968705 #21238]  INFO -- : [6a394948-66ec-468b-b14e-b794889c2ef9] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+I, [2020-04-04T06:47:09.393111 #21238]  INFO -- : [182703bf-b764-4434-acfc-714c571964f2] Started DELETE "/users/sign_out" for 175.177.41.43 at 2020-04-04 06:47:09 +0000
+I, [2020-04-04T06:47:09.394011 #21238]  INFO -- : [182703bf-b764-4434-acfc-714c571964f2] Processing by Users::SessionsController#destroy as HTML
+I, [2020-04-04T06:47:09.394059 #21238]  INFO -- : [182703bf-b764-4434-acfc-714c571964f2]   Parameters: {"authenticity_token"=>"FwEUVfZCjwA7Wweqx+t2kXeisHpfjxlH5kXp92jj0/jLwmgfgpV5ogmuLbOiHf3h8dxg+G/BvF4XFXwSlAhLNA=="}
+D, [2020-04-04T06:47:09.395398 #21238] DEBUG -- : [182703bf-b764-4434-acfc-714c571964f2]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2020-04-04T06:47:09.398438 #21238] DEBUG -- : [182703bf-b764-4434-acfc-714c571964f2]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T06:47:09.399322 #21238] DEBUG -- : [182703bf-b764-4434-acfc-714c571964f2]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T06:47:09.400133 #21238]  INFO -- : [182703bf-b764-4434-acfc-714c571964f2] Redirected to http://18.180.219.144/
+I, [2020-04-04T06:47:09.400294 #21238]  INFO -- : [182703bf-b764-4434-acfc-714c571964f2] Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+I, [2020-04-04T06:47:09.412226 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56] Started GET "/" for 175.177.41.43 at 2020-04-04 06:47:09 +0000
+I, [2020-04-04T06:47:09.412696 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56] Processing by ItemsController#index as HTML
+I, [2020-04-04T06:47:09.413496 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendering items/index.html.haml within layouts/application
+I, [2020-04-04T06:47:09.414682 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendered items/_main-header.html.haml (1.0ms)
+D, [2020-04-04T06:47:09.415959 #21238] DEBUG -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T06:47:09.416088 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendered items/_main-top.html.haml (1.2ms)
+I, [2020-04-04T06:47:09.416791 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendered items/_main-footer.html.haml (0.6ms)
+I, [2020-04-04T06:47:09.417119 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T06:47:09.417199 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56]   Rendered items/index.html.haml within layouts/application (3.6ms)
+I, [2020-04-04T06:47:09.417757 #21238]  INFO -- : [fada0459-87f5-4c4d-9dfc-be8064516a56] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+I, [2020-04-04T06:47:10.160536 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23] Started GET "/users/sign_in" for 175.177.41.43 at 2020-04-04 06:47:10 +0000
+I, [2020-04-04T06:47:10.161332 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T06:47:10.162800 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T06:47:10.163359 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T06:47:10.164699 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23]   Rendered devise/shared/_footer.html.haml (0.3ms)
+I, [2020-04-04T06:47:10.164778 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23]   Rendered devise/sessions/new.html.haml within layouts/application (1.9ms)
+I, [2020-04-04T06:47:10.165452 #21238]  INFO -- : [1e590fed-a264-49bf-8228-04fb1dcfaf23] Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T06:47:19.901526 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14] Started GET "/users/sign_up" for 175.177.41.43 at 2020-04-04 06:47:19 +0000
+I, [2020-04-04T06:47:19.902360 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14] Processing by Users::RegistrationsController#new as HTML
+I, [2020-04-04T06:47:19.903630 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14]   Rendering devise/registrations/new.html.haml within layouts/application
+I, [2020-04-04T06:47:19.904226 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T06:47:19.907130 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14]   Rendered devise/shared/_footer.html.haml (0.3ms)
+I, [2020-04-04T06:47:19.907212 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14]   Rendered devise/registrations/new.html.haml within layouts/application (3.5ms)
+I, [2020-04-04T06:47:19.907863 #21238]  INFO -- : [0edac55b-1a36-4c86-b47d-fe8f8b19bf14] Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T07:09:11.786068 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1] Started GET "/items/:id" for 175.177.41.43 at 2020-04-04 07:09:11 +0000
+I, [2020-04-04T07:09:11.786823 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1] Processing by ItemsController#show as HTML
+I, [2020-04-04T07:09:11.786871 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Parameters: {"id"=>":id"}
+I, [2020-04-04T07:09:11.788105 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendering items/show.html.haml within layouts/application
+I, [2020-04-04T07:09:11.791146 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/_main-header.html.haml (1.0ms)
+I, [2020-04-04T07:09:11.793785 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/_nav-bar.html.haml (2.0ms)
+I, [2020-04-04T07:09:11.802729 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/_show-main.html.haml (8.3ms)
+I, [2020-04-04T07:09:11.803820 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/_main-footer.html.haml (0.9ms)
+I, [2020-04-04T07:09:11.804251 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/_camera-btn.html.haml (0.3ms)
+I, [2020-04-04T07:09:11.804336 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1]   Rendered items/show.html.haml within layouts/application (16.2ms)
+I, [2020-04-04T07:09:11.805314 #21238]  INFO -- : [616edb4a-d606-4fba-80bc-a651142282f1] Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T07:09:17.080620 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20] Started GET "/items/:id/edit" for 175.177.41.43 at 2020-04-04 07:09:17 +0000
+I, [2020-04-04T07:09:17.081610 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20] Processing by ItemsController#edit as HTML
+I, [2020-04-04T07:09:17.081664 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20]   Parameters: {"id"=>":id"}
+I, [2020-04-04T07:09:17.083224 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20]   Rendering items/edit.html.haml within layouts/application
+I, [2020-04-04T07:09:17.103470 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20]   Rendered items/edit.html.haml within layouts/application (20.2ms)
+I, [2020-04-04T07:09:17.104162 #21238]  INFO -- : [995a1d59-a14d-40ca-aa15-38a65c8f3b20] Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T07:09:40.937104 #21238]  INFO -- : [ac2838c6-274a-42c9-8a54-ca04d31ba48c] Started GET "/items/new" for 175.177.41.43 at 2020-04-04 07:09:40 +0000
+I, [2020-04-04T07:09:40.937853 #21238]  INFO -- : [ac2838c6-274a-42c9-8a54-ca04d31ba48c] Processing by ItemsController#new as HTML
+I, [2020-04-04T07:09:40.939082 #21238]  INFO -- : [ac2838c6-274a-42c9-8a54-ca04d31ba48c]   Rendering items/new.html.haml within layouts/application
+I, [2020-04-04T07:09:40.952031 #21238]  INFO -- : [ac2838c6-274a-42c9-8a54-ca04d31ba48c]   Rendered items/new.html.haml within layouts/application (12.9ms)
+I, [2020-04-04T07:09:40.952706 #21238]  INFO -- : [ac2838c6-274a-42c9-8a54-ca04d31ba48c] Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T07:11:43.436310 #21238]  INFO -- : [e3accaa9-2e74-44bc-a2cc-0db72714d140] Started GET "/user" for 175.177.41.43 at 2020-04-04 07:11:43 +0000
+F, [2020-04-04T07:11:43.436967 #21238] FATAL -- : [e3accaa9-2e74-44bc-a2cc-0db72714d140]   
+F, [2020-04-04T07:11:43.437014 #21238] FATAL -- : [e3accaa9-2e74-44bc-a2cc-0db72714d140] ActionController::RoutingError (No route matches [GET] "/user"):
+F, [2020-04-04T07:11:43.437039 #21238] FATAL -- : [e3accaa9-2e74-44bc-a2cc-0db72714d140]   
+F, [2020-04-04T07:11:43.437077 #21238] FATAL -- : [e3accaa9-2e74-44bc-a2cc-0db72714d140] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[e3accaa9-2e74-44bc-a2cc-0db72714d140] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:11:48.732954 #21238]  INFO -- : [6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] Started GET "/users" for 175.177.41.43 at 2020-04-04 07:11:48 +0000
+F, [2020-04-04T07:11:48.733544 #21238] FATAL -- : [6cf20ca9-c374-4edd-af1d-bfa3e07f7d12]   
+F, [2020-04-04T07:11:48.733585 #21238] FATAL -- : [6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] ActionController::RoutingError (No route matches [GET] "/users"):
+F, [2020-04-04T07:11:48.733607 #21238] FATAL -- : [6cf20ca9-c374-4edd-af1d-bfa3e07f7d12]   
+F, [2020-04-04T07:11:48.733638 #21238] FATAL -- : [6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[6cf20ca9-c374-4edd-af1d-bfa3e07f7d12] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:11:52.717342 #21238]  INFO -- : [4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] Started GET "/users/show" for 175.177.41.43 at 2020-04-04 07:11:52 +0000
+F, [2020-04-04T07:11:52.717980 #21238] FATAL -- : [4b7ef96f-7388-4db5-8e21-b6784ba0ea6b]   
+F, [2020-04-04T07:11:52.718021 #21238] FATAL -- : [4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] ActionController::RoutingError (No route matches [GET] "/users/show"):
+F, [2020-04-04T07:11:52.718044 #21238] FATAL -- : [4b7ef96f-7388-4db5-8e21-b6784ba0ea6b]   
+F, [2020-04-04T07:11:52.718077 #21238] FATAL -- : [4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[4b7ef96f-7388-4db5-8e21-b6784ba0ea6b] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:12:09.916396 #21238]  INFO -- : [0761f443-da8a-4d6c-83d8-b2e754be8570] Started GET "/user/:id" for 175.177.41.43 at 2020-04-04 07:12:09 +0000
+F, [2020-04-04T07:12:09.916988 #21238] FATAL -- : [0761f443-da8a-4d6c-83d8-b2e754be8570]   
+F, [2020-04-04T07:12:09.917026 #21238] FATAL -- : [0761f443-da8a-4d6c-83d8-b2e754be8570] ActionController::RoutingError (No route matches [GET] "/user/:id"):
+F, [2020-04-04T07:12:09.917046 #21238] FATAL -- : [0761f443-da8a-4d6c-83d8-b2e754be8570]   
+F, [2020-04-04T07:12:09.917101 #21238] FATAL -- : [0761f443-da8a-4d6c-83d8-b2e754be8570] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[0761f443-da8a-4d6c-83d8-b2e754be8570] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:12:13.263453 #21238]  INFO -- : [7588b02f-7aed-4167-8f09-7381cefabae5] Started GET "/users/:id" for 175.177.41.43 at 2020-04-04 07:12:13 +0000
+F, [2020-04-04T07:12:13.264034 #21238] FATAL -- : [7588b02f-7aed-4167-8f09-7381cefabae5]   
+F, [2020-04-04T07:12:13.264074 #21238] FATAL -- : [7588b02f-7aed-4167-8f09-7381cefabae5] ActionController::RoutingError (No route matches [GET] "/users/:id"):
+F, [2020-04-04T07:12:13.264096 #21238] FATAL -- : [7588b02f-7aed-4167-8f09-7381cefabae5]   
+F, [2020-04-04T07:12:13.264128 #21238] FATAL -- : [7588b02f-7aed-4167-8f09-7381cefabae5] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[7588b02f-7aed-4167-8f09-7381cefabae5] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7588b02f-7aed-4167-8f09-7381cefabae5] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[7588b02f-7aed-4167-8f09-7381cefabae5] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[7588b02f-7aed-4167-8f09-7381cefabae5] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[7588b02f-7aed-4167-8f09-7381cefabae5] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[7588b02f-7aed-4167-8f09-7381cefabae5] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[7588b02f-7aed-4167-8f09-7381cefabae5] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[7588b02f-7aed-4167-8f09-7381cefabae5] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[7588b02f-7aed-4167-8f09-7381cefabae5] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[7588b02f-7aed-4167-8f09-7381cefabae5] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[7588b02f-7aed-4167-8f09-7381cefabae5] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:22:35.087809 #21238]  INFO -- : [7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] Started GET "/solr/admin/info/system?wt=json" for 5.101.0.209 at 2020-04-04 07:22:35 +0000
+F, [2020-04-04T07:22:35.088400 #21238] FATAL -- : [7fa73137-1bbd-4a4f-99b0-06929cc8f3ec]   
+F, [2020-04-04T07:22:35.088440 #21238] FATAL -- : [7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] ActionController::RoutingError (No route matches [GET] "/solr/admin/info/system"):
+F, [2020-04-04T07:22:35.088462 #21238] FATAL -- : [7fa73137-1bbd-4a4f-99b0-06929cc8f3ec]   
+F, [2020-04-04T07:22:35.088491 #21238] FATAL -- : [7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[7fa73137-1bbd-4a4f-99b0-06929cc8f3ec] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T07:34:48.389359 #21238]  INFO -- : [25817949-ed0c-4c65-b520-3401f71dff6b] Started GET "/?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php>" for 5.101.0.209 at 2020-04-04 07:34:48 +0000
+I, [2020-04-04T07:34:48.390468 #21238]  INFO -- : [25817949-ed0c-4c65-b520-3401f71dff6b] Processing by ItemsController#index as HTML
+I, [2020-04-04T07:34:48.390520 #21238]  INFO -- : [25817949-ed0c-4c65-b520-3401f71dff6b]   Parameters: {"a"=>"fetch", "content"=>"<php>die(@md5(HelloThinkCMF))</php>", "item"=>{}}
+I, [2020-04-04T07:34:48.390785 #21238]  INFO -- : [25817949-ed0c-4c65-b520-3401f71dff6b] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T07:34:48.390882 #21238]  INFO -- : [25817949-ed0c-4c65-b520-3401f71dff6b] Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+I, [2020-04-04T07:34:48.904216 #21238]  INFO -- : [1a62c0ec-58a0-4b32-aa8d-c80fccb6375c] Started GET "/?XDEBUG_SESSION_START=phpstorm" for 5.101.0.209 at 2020-04-04 07:34:48 +0000
+I, [2020-04-04T07:34:48.904849 #21238]  INFO -- : [1a62c0ec-58a0-4b32-aa8d-c80fccb6375c] Processing by ItemsController#index as HTML
+I, [2020-04-04T07:34:48.904895 #21238]  INFO -- : [1a62c0ec-58a0-4b32-aa8d-c80fccb6375c]   Parameters: {"XDEBUG_SESSION_START"=>"phpstorm"}
+I, [2020-04-04T07:34:48.905127 #21238]  INFO -- : [1a62c0ec-58a0-4b32-aa8d-c80fccb6375c] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T07:34:48.905228 #21238]  INFO -- : [1a62c0ec-58a0-4b32-aa8d-c80fccb6375c] Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+I, [2020-04-04T07:41:29.620674 #21238]  INFO -- : [86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] Started GET "/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP" for 5.101.0.209 at 2020-04-04 07:41:29 +0000
+F, [2020-04-04T07:41:29.621250 #21238] FATAL -- : [86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6]   
+F, [2020-04-04T07:41:29.621290 #21238] FATAL -- : [86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] ActionController::RoutingError (No route matches [GET] "/index.php"):
+F, [2020-04-04T07:41:29.621313 #21238] FATAL -- : [86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6]   
+F, [2020-04-04T07:41:29.621364 #21238] FATAL -- : [86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+[86bbbbd1-1b9b-49fc-ba36-ab66b7008fe6] /var/www/freemarket_sample_64b/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<main>'
+I, [2020-04-04T08:00:11.273685 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb] Started GET "/users/sign_in" for 175.177.41.43 at 2020-04-04 08:00:11 +0000
+I, [2020-04-04T08:00:11.274443 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T08:00:11.275759 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T08:00:11.276351 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T08:00:11.277575 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T08:00:11.277647 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb]   Rendered devise/sessions/new.html.haml within layouts/application (1.8ms)
+I, [2020-04-04T08:00:11.278307 #21238]  INFO -- : [4eef7215-0e76-44a3-b59e-441b1d805fbb] Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T08:00:13.885770 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f] Started GET "/" for 175.177.41.43 at 2020-04-04 08:00:13 +0000
+I, [2020-04-04T08:00:13.886496 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f] Processing by ItemsController#index as HTML
+I, [2020-04-04T08:00:13.887389 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendering items/index.html.haml within layouts/application
+I, [2020-04-04T08:00:13.888678 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendered items/_main-header.html.haml (1.1ms)
+D, [2020-04-04T08:00:13.889996 #21238] DEBUG -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T08:00:13.890146 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendered items/_main-top.html.haml (1.3ms)
+I, [2020-04-04T08:00:13.890794 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T08:00:13.891116 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T08:00:13.891184 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f]   Rendered items/index.html.haml within layouts/application (3.7ms)
+I, [2020-04-04T08:00:13.891828 #21238]  INFO -- : [29b3c41a-efec-4de3-99d7-5beeacd8c30f] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+I, [2020-04-04T08:00:15.528739 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b] Started GET "/users/sign_up" for 175.177.41.43 at 2020-04-04 08:00:15 +0000
+I, [2020-04-04T08:00:15.529441 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b] Processing by Users::RegistrationsController#new as HTML
+I, [2020-04-04T08:00:15.530673 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b]   Rendering devise/registrations/new.html.haml within layouts/application
+I, [2020-04-04T08:00:15.531269 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T08:00:15.534024 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T08:00:15.534094 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b]   Rendered devise/registrations/new.html.haml within layouts/application (3.3ms)
+I, [2020-04-04T08:00:15.534730 #21238]  INFO -- : [5d9f8fca-4152-4f06-add9-2b938a73364b] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T08:10:38.387177 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc] Started GET "/users/sign_up" for 175.177.41.43 at 2020-04-04 08:10:38 +0000
+I, [2020-04-04T08:10:38.387913 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc] Processing by Users::RegistrationsController#new as HTML
+I, [2020-04-04T08:10:38.389180 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc]   Rendering devise/registrations/new.html.haml within layouts/application
+I, [2020-04-04T08:10:38.389789 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T08:10:38.392570 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T08:10:38.392648 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc]   Rendered devise/registrations/new.html.haml within layouts/application (3.4ms)
+I, [2020-04-04T08:10:38.393272 #21238]  INFO -- : [7f907dbb-c012-4494-a064-083828ef7fdc] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T08:11:19.470493 #21238]  INFO -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f] Started POST "/users" for 175.177.41.43 at 2020-04-04 08:11:19 +0000
+I, [2020-04-04T08:11:19.471269 #21238]  INFO -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f] Processing by Users::RegistrationsController#create as HTML
+I, [2020-04-04T08:11:19.471341 #21238]  INFO -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"TrgWPVgAq0pIfbn7R41BgFQzRXnBB7/yi+/cKNkxnc4MAipp8fiXWzOxTBzZFT7t5PgdKrA/dKpDpO4EPoudhw==", "user"=>{"nickname"=>"aaa", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "last_name"=>"山田", "first_name"=>"彩", "last_name_kana"=>"ヤマダ", "first_name_kana"=>"アヤ", "birthday(1i)"=>"1952", "birthday(2i)"=>"8", "birthday(3i)"=>"7"}, "commit"=>"次へ"}
+D, [2020-04-04T08:11:19.621320 #21238] DEBUG -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T08:11:19.622477 #21238] DEBUG -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aaa@aaa' LIMIT 1[0m
+D, [2020-04-04T08:11:19.623211 #21238] DEBUG -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aaa@aaa' LIMIT 1[0m
+D, [2020-04-04T08:11:19.625135 #21238] DEBUG -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `users` (`last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('山田', '彩', 'ヤマダ', 'アヤ', 'aaa', '1952-08-07', 'aaa@aaa', '$2a$11$5l3uM60TB3fo.vpfy.DWWeKek6Obr.j7rmWMjupnPqsqD.6yHiftC', '2020-04-04 08:11:19', '2020-04-04 08:11:19')[0m
+D, [2020-04-04T08:11:19.628341 #21238] DEBUG -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f]   [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T08:11:19.630018 #21238]  INFO -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f] Redirected to http://18.180.219.144/addresses/new.2
+I, [2020-04-04T08:11:19.630236 #21238]  INFO -- : [fbf47b7f-e890-48b3-b7e2-502b28596b6f] Completed 302 Found in 159ms (ActiveRecord: 4.4ms)
+I, [2020-04-04T08:11:19.644780 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5] Started GET "/addresses/new.2" for 175.177.41.43 at 2020-04-04 08:11:19 +0000
+I, [2020-04-04T08:11:19.645365 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5] Processing by AddressesController#new as 
+D, [2020-04-04T08:11:19.646627 #21238] DEBUG -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T08:11:19.647364 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5]   Rendering addresses/new.html.haml within layouts/application
+I, [2020-04-04T08:11:19.647928 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T08:11:19.649091 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T08:11:19.649157 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5]   Rendered addresses/new.html.haml within layouts/application (1.7ms)
+I, [2020-04-04T08:11:19.649772 #21238]  INFO -- : [2473f0f7-2cd5-4fcc-b2b3-17609f76cdb5] Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+I, [2020-04-04T08:11:23.876850 #21238]  INFO -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc] Started POST "/addresses" for 175.177.41.43 at 2020-04-04 08:11:23 +0000
+I, [2020-04-04T08:11:23.877609 #21238]  INFO -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc] Processing by AddressesController#create as HTML
+I, [2020-04-04T08:11:23.877680 #21238]  INFO -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"zMhCRA/v9wcswdBGLMFxDrzYlCS+SwGEkXbgrO3ZUEx9nN1jtBszhhElsJRuz+HIr3b42VQlToYk+J9VyI0Wig==", "address"=>{"postcode"=>"2270066", "prefecture"=>"", "city"=>"", "block"=>"", "building"=>"", "phone_number"=>""}, "commit"=>"登録する"}
+D, [2020-04-04T08:11:23.879157 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2020-04-04T08:11:23.880062 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T08:11:23.880981 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+D, [2020-04-04T08:11:23.883141 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `addresses` (`postcode`, `prefecture`, `city`, `block`, `building`, `phone_number`, `user_id`, `created_at`, `updated_at`) VALUES (2270066, '', '', '', '', '', 2, '2020-04-04 08:11:23', '2020-04-04 08:11:23')[0m
+D, [2020-04-04T08:11:23.887671 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T08:11:23.887884 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T08:11:23.888459 #21238] DEBUG -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T08:11:23.888722 #21238]  INFO -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc] Redirected to http://18.180.219.144/
+I, [2020-04-04T08:11:23.889294 #21238]  INFO -- : [0b94c35c-bbec-4eff-ad0b-6424f6f52dcc] Completed 302 Found in 12ms (ActiveRecord: 5.9ms)
+I, [2020-04-04T08:11:23.902914 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1] Started GET "/" for 175.177.41.43 at 2020-04-04 08:11:23 +0000
+I, [2020-04-04T08:11:23.903557 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1] Processing by ItemsController#index as HTML
+I, [2020-04-04T08:11:23.904416 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T08:11:23.906090 #21238] DEBUG -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T08:11:23.906712 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendered items/_main-header.html.haml (2.1ms)
+D, [2020-04-04T08:11:23.907699 #21238] DEBUG -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T08:11:23.907849 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T08:11:23.908500 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T08:11:23.908834 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T08:11:23.908903 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1]   Rendered items/index.html.haml within layouts/application (4.4ms)
+I, [2020-04-04T08:11:23.909514 #21238]  INFO -- : [0d6a1f8b-5195-4752-8fdf-58f84b51c6c1] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+I, [2020-04-04T08:58:15.618365 #21238]  INFO -- : [52e34b72-1046-4107-ba14-a917c4ea8649] Started GET "/" for 3.91.149.226 at 2020-04-04 08:58:15 +0000
+I, [2020-04-04T08:58:15.619059 #21238]  INFO -- : [52e34b72-1046-4107-ba14-a917c4ea8649] Processing by ItemsController#index as */*
+I, [2020-04-04T08:58:15.619309 #21238]  INFO -- : [52e34b72-1046-4107-ba14-a917c4ea8649] Filter chain halted as :basic_auth rendered or redirected
+I, [2020-04-04T08:58:15.619409 #21238]  INFO -- : [52e34b72-1046-4107-ba14-a917c4ea8649] Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+D, [2020-04-04T10:02:14.357951 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T10:02:14.358223 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T10:02:14.366860 #22605] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2020-04-04T10:02:14.371781 #22605]  INFO -- : Migrating to CreateCards (20200324025657)
+D, [2020-04-04T10:02:14.396869 #22605] DEBUG -- :   [1m[35m (22.9ms)[0m  [1m[35mCREATE TABLE `cards` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `customer_id` varchar(255) NOT NULL, `card_id` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2020-04-04T10:02:14.397387 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:02:14.398855 #22605] DEBUG -- :   [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200324025657')[0m
+D, [2020-04-04T10:02:14.400554 #22605] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T10:02:14.402213 #22605] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T10:02:14.405066 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:02:14.405718 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T10:02:14.405968 #22605] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m
+I, [2020-04-04T10:02:26.926432 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1] Started GET "/" for 175.177.41.43 at 2020-04-04 10:02:26 +0000
+I, [2020-04-04T10:02:26.927031 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:02:26.927871 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:02:26.929541 #21238] DEBUG -- : [3788652f-b262-4825-9413-dfa828e11aa1]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:02:26.930195 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendered items/_main-header.html.haml (2.1ms)
+D, [2020-04-04T10:02:26.931253 #21238] DEBUG -- : [3788652f-b262-4825-9413-dfa828e11aa1]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:02:26.931384 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendered items/_main-top.html.haml (1.1ms)
+I, [2020-04-04T10:02:26.932053 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendered items/_main-footer.html.haml (0.6ms)
+I, [2020-04-04T10:02:26.932411 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:02:26.932478 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1]   Rendered items/index.html.haml within layouts/application (4.5ms)
+I, [2020-04-04T10:02:26.933144 #21238]  INFO -- : [3788652f-b262-4825-9413-dfa828e11aa1] Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+I, [2020-04-04T10:02:29.257520 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10] Started GET "/" for 175.177.41.43 at 2020-04-04 10:02:29 +0000
+I, [2020-04-04T10:02:29.258257 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:02:29.259117 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:02:29.260794 #21238] DEBUG -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:02:29.261428 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendered items/_main-header.html.haml (2.1ms)
+D, [2020-04-04T10:02:29.262439 #21238] DEBUG -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:02:29.262577 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T10:02:29.263246 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T10:02:29.263562 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:02:29.263653 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10]   Rendered items/index.html.haml within layouts/application (4.5ms)
+I, [2020-04-04T10:02:29.264248 #21238]  INFO -- : [1fda5744-99e6-4a85-84f4-adefea03bb10] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+I, [2020-04-04T10:02:31.385137 #21238]  INFO -- : [d17000c5-cbec-47d9-a87c-d28340b5c573] Started DELETE "/users/sign_out" for 175.177.41.43 at 2020-04-04 10:02:31 +0000
+I, [2020-04-04T10:02:31.385902 #21238]  INFO -- : [d17000c5-cbec-47d9-a87c-d28340b5c573] Processing by Users::SessionsController#destroy as HTML
+I, [2020-04-04T10:02:31.385953 #21238]  INFO -- : [d17000c5-cbec-47d9-a87c-d28340b5c573]   Parameters: {"authenticity_token"=>"m6W9gGXCuWylT3h2Ya8NyCmbTxS60R3i1baF9c9Dcl8q8SKn3jZ97ZirGKQjoZ0OOjUj6VC/UuBgOPoM6hc0mQ=="}
+D, [2020-04-04T10:02:31.387239 #21238] DEBUG -- : [d17000c5-cbec-47d9-a87c-d28340b5c573]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2020-04-04T10:02:31.388068 #21238] DEBUG -- : [d17000c5-cbec-47d9-a87c-d28340b5c573]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:02:31.388859 #21238] DEBUG -- : [d17000c5-cbec-47d9-a87c-d28340b5c573]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T10:02:31.389443 #21238]  INFO -- : [d17000c5-cbec-47d9-a87c-d28340b5c573] Redirected to http://18.180.219.144/
+I, [2020-04-04T10:02:31.389593 #21238]  INFO -- : [d17000c5-cbec-47d9-a87c-d28340b5c573] Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+I, [2020-04-04T10:02:31.400787 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b] Started GET "/" for 175.177.41.43 at 2020-04-04 10:02:31 +0000
+I, [2020-04-04T10:02:31.401245 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:02:31.401978 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendering items/index.html.haml within layouts/application
+I, [2020-04-04T10:02:31.403187 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendered items/_main-header.html.haml (1.0ms)
+D, [2020-04-04T10:02:31.404382 #21238] DEBUG -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:02:31.404521 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendered items/_main-top.html.haml (1.2ms)
+I, [2020-04-04T10:02:31.405181 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T10:02:31.405497 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:02:31.405565 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b]   Rendered items/index.html.haml within layouts/application (3.5ms)
+I, [2020-04-04T10:02:31.406198 #21238]  INFO -- : [84c1d9f1-9961-449f-b51e-c3fecc13b31b] Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+I, [2020-04-04T10:02:33.431677 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103] Started GET "/users/sign_in" for 175.177.41.43 at 2020-04-04 10:02:33 +0000
+I, [2020-04-04T10:02:33.432388 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T10:02:33.433764 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T10:02:33.434379 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T10:02:33.435720 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103]   Rendered devise/shared/_footer.html.haml (0.3ms)
+I, [2020-04-04T10:02:33.435789 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103]   Rendered devise/sessions/new.html.haml within layouts/application (2.0ms)
+I, [2020-04-04T10:02:33.436395 #21238]  INFO -- : [62c7dd58-feee-44c6-8346-fd5697c1f103] Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T10:02:40.213265 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d] Started POST "/users/sign_in" for 175.177.41.43 at 2020-04-04 10:02:40 +0000
+I, [2020-04-04T10:02:40.214106 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d] Processing by Users::SessionsController#create as HTML
+I, [2020-04-04T10:02:40.214168 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0lQmgtj7qlX96/KKoXKdxBMjeaQYZzD1GYhjTi1OSxS4HoWhiAPQes7h1ezfsBxrKaLlnveR6NWis7KZabp3JA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "g-recaptcha-response"=>"", "commit"=>"ログイン"}
+D, [2020-04-04T10:02:40.217163 #21238] DEBUG -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:02:40.366045 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d] Completed 401 Unauthorized in 152ms (ActiveRecord: 0.3ms)
+I, [2020-04-04T10:02:40.367752 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T10:02:40.367814 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0lQmgtj7qlX96/KKoXKdxBMjeaQYZzD1GYhjTi1OSxS4HoWhiAPQes7h1ezfsBxrKaLlnveR6NWis7KZabp3JA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "g-recaptcha-response"=>"", "commit"=>"ログイン"}
+I, [2020-04-04T10:02:40.518009 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T10:02:40.518697 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T10:02:40.519964 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T10:02:40.520036 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d]   Rendered devise/sessions/new.html.haml within layouts/application (1.9ms)
+I, [2020-04-04T10:02:40.520671 #21238]  INFO -- : [2ee74dde-5d54-4184-80c3-fa5e9047156d] Completed 200 OK in 153ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T10:02:52.733060 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165] Started GET "/users/sign_in" for 175.177.41.43 at 2020-04-04 10:02:52 +0000
+I, [2020-04-04T10:02:52.733748 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165] Processing by Users::SessionsController#new as HTML
+I, [2020-04-04T10:02:52.735054 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165]   Rendering devise/sessions/new.html.haml within layouts/application
+I, [2020-04-04T10:02:52.735621 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T10:02:52.736865 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T10:02:52.736933 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165]   Rendered devise/sessions/new.html.haml within layouts/application (1.8ms)
+I, [2020-04-04T10:02:52.737505 #21238]  INFO -- : [4d8d091d-dffe-44a3-ae26-15ee8d094165] Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T10:02:54.488599 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24] Started GET "/" for 175.177.41.43 at 2020-04-04 10:02:54 +0000
+I, [2020-04-04T10:02:54.489366 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:02:54.490414 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendering items/index.html.haml within layouts/application
+I, [2020-04-04T10:02:54.491694 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendered items/_main-header.html.haml (1.1ms)
+D, [2020-04-04T10:02:54.492980 #21238] DEBUG -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:02:54.493127 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendered items/_main-top.html.haml (1.3ms)
+I, [2020-04-04T10:02:54.493764 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T10:02:54.494118 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:02:54.494187 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24]   Rendered items/index.html.haml within layouts/application (3.7ms)
+I, [2020-04-04T10:02:54.494798 #21238]  INFO -- : [7e41cfc1-86d4-41f2-9e73-b3fa10b57e24] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+I, [2020-04-04T10:02:56.387054 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216] Started GET "/users/sign_up" for 175.177.41.43 at 2020-04-04 10:02:56 +0000
+I, [2020-04-04T10:02:56.387804 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216] Processing by Users::RegistrationsController#new as HTML
+I, [2020-04-04T10:02:56.388990 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216]   Rendering devise/registrations/new.html.haml within layouts/application
+I, [2020-04-04T10:02:56.389549 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T10:02:56.392247 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T10:02:56.392318 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216]   Rendered devise/registrations/new.html.haml within layouts/application (3.3ms)
+I, [2020-04-04T10:02:56.392929 #21238]  INFO -- : [dd3f7226-f61e-48d0-ba2e-53437acbc216] Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+I, [2020-04-04T10:03:29.305915 #21238]  INFO -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217] Started POST "/users" for 175.177.41.43 at 2020-04-04 10:03:29 +0000
+I, [2020-04-04T10:03:29.306730 #21238]  INFO -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217] Processing by Users::RegistrationsController#create as HTML
+I, [2020-04-04T10:03:29.306802 #21238]  INFO -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ABeaJV92h13Gd7j5juPvuJx35RF9IhmFLOYR2Bu0kYudIYoWlyz6pVJpkGj/u8KGKHLLH5JZr1faieIuNEdXA==", "user"=>{"nickname"=>"tosy", "email"=>"toshi.kimura5903@gmail.com", "password"=>"[FILTERED]", "last_name"=>"木村", "first_name"=>"智広", "last_name_kana"=>"キムラ", "first_name_kana"=>"トシヒロ", "birthday(1i)"=>"1984", "birthday(2i)"=>"3", "birthday(3i)"=>"30"}, "commit"=>"次へ"}
+D, [2020-04-04T10:03:29.456760 #21238] DEBUG -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:03:29.457946 #21238] DEBUG -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'toshi.kimura5903@gmail.com' LIMIT 1[0m
+D, [2020-04-04T10:03:29.458698 #21238] DEBUG -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'toshi.kimura5903@gmail.com' LIMIT 1[0m
+D, [2020-04-04T10:03:29.459875 #21238] DEBUG -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('木村', '智広', 'キムラ', 'トシヒロ', 'tosy', '1984-03-30', 'toshi.kimura5903@gmail.com', '$2a$11$GvO6/P9QDw5SVFat3w0loeZLFwqH0lExJbyiR5/aWdVCFxADZCw9S', '2020-04-04 10:03:29', '2020-04-04 10:03:29')[0m
+D, [2020-04-04T10:03:29.462330 #21238] DEBUG -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217]   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T10:03:29.463397 #21238]  INFO -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217] Redirected to http://18.180.219.144/addresses/new.3
+I, [2020-04-04T10:03:29.463524 #21238]  INFO -- : [a571a262-69a0-4c48-8fc5-ac0652cb1217] Completed 302 Found in 157ms (ActiveRecord: 2.9ms)
+I, [2020-04-04T10:03:29.479023 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85] Started GET "/addresses/new.3" for 175.177.41.43 at 2020-04-04 10:03:29 +0000
+I, [2020-04-04T10:03:29.479677 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85] Processing by AddressesController#new as 
+D, [2020-04-04T10:03:29.481068 #21238] DEBUG -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:03:29.481859 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85]   Rendering addresses/new.html.haml within layouts/application
+I, [2020-04-04T10:03:29.482449 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85]   Rendered devise/shared/_header.html.haml (0.4ms)
+I, [2020-04-04T10:03:29.483654 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85]   Rendered devise/shared/_footer.html.haml (0.2ms)
+I, [2020-04-04T10:03:29.483722 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85]   Rendered addresses/new.html.haml within layouts/application (1.8ms)
+I, [2020-04-04T10:03:29.484341 #21238]  INFO -- : [e94b84d2-4fc7-414d-9c2e-6660c767fa85] Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+I, [2020-04-04T10:03:31.949338 #21238]  INFO -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00] Started POST "/addresses" for 175.177.41.43 at 2020-04-04 10:03:31 +0000
+I, [2020-04-04T10:03:31.950054 #21238]  INFO -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00] Processing by AddressesController#create as HTML
+I, [2020-04-04T10:03:31.950135 #21238]  INFO -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"EUmEqXEAdZ1+tr6mPVCYKFTIxmpr6v970ehmll1wOw3+HxzxqiQFdUm59h6dscgicoUxu9OcesgiKHpENwsMhw==", "address"=>{"postcode"=>"", "prefecture"=>"", "city"=>"", "block"=>"", "building"=>"", "phone_number"=>""}, "commit"=>"登録する"}
+D, [2020-04-04T10:03:31.951570 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2020-04-04T10:03:31.952472 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:03:31.953362 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+D, [2020-04-04T10:03:31.955303 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `addresses` (`prefecture`, `city`, `block`, `building`, `phone_number`, `user_id`, `created_at`, `updated_at`) VALUES ('', '', '', '', '', 3, '2020-04-04 10:03:31', '2020-04-04 10:03:31')[0m
+D, [2020-04-04T10:03:31.957707 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T10:03:31.957922 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:03:31.958452 #21238] DEBUG -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-04-04T10:03:31.958651 #21238]  INFO -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00] Redirected to http://18.180.219.144/
+I, [2020-04-04T10:03:31.958763 #21238]  INFO -- : [5b9beaf9-f9cb-403c-9a26-c05c89319d00] Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+I, [2020-04-04T10:03:31.971778 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11] Started GET "/" for 175.177.41.43 at 2020-04-04 10:03:31 +0000
+I, [2020-04-04T10:03:31.972276 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:03:31.973069 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:03:31.974662 #21238] DEBUG -- : [f9976333-2fd8-4009-9d37-279e23785a11]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:03:31.975287 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendered items/_main-header.html.haml (2.0ms)
+D, [2020-04-04T10:03:31.976258 #21238] DEBUG -- : [f9976333-2fd8-4009-9d37-279e23785a11]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:03:31.976383 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T10:03:31.977023 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendered items/_main-footer.html.haml (0.5ms)
+I, [2020-04-04T10:03:31.977343 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:03:31.977440 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11]   Rendered items/index.html.haml within layouts/application (4.3ms)
+I, [2020-04-04T10:03:31.978052 #21238]  INFO -- : [f9976333-2fd8-4009-9d37-279e23785a11] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+I, [2020-04-04T10:03:34.318560 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f] Started GET "/" for 175.177.41.43 at 2020-04-04 10:03:34 +0000
+I, [2020-04-04T10:03:34.319229 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:03:34.320072 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:03:34.321908 #21238] DEBUG -- : [56563502-c56a-4768-b039-030ced71ce6f]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:03:34.322568 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendered items/_main-header.html.haml (2.3ms)
+D, [2020-04-04T10:03:34.323552 #21238] DEBUG -- : [56563502-c56a-4768-b039-030ced71ce6f]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:03:34.323697 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T10:03:34.324377 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendered items/_main-footer.html.haml (0.6ms)
+I, [2020-04-04T10:03:34.324702 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:03:34.324770 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f]   Rendered items/index.html.haml within layouts/application (4.6ms)
+I, [2020-04-04T10:03:34.325395 #21238]  INFO -- : [56563502-c56a-4768-b039-030ced71ce6f] Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+I, [2020-04-04T10:03:35.190605 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d] Started GET "/" for 175.177.41.43 at 2020-04-04 10:03:35 +0000
+I, [2020-04-04T10:03:35.191256 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:03:35.192135 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:03:35.193926 #21238] DEBUG -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:03:35.194502 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendered items/_main-header.html.haml (2.1ms)
+D, [2020-04-04T10:03:35.195507 #21238] DEBUG -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:03:35.195659 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T10:03:35.196395 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendered items/_main-footer.html.haml (0.6ms)
+I, [2020-04-04T10:03:35.196776 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:03:35.196841 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d]   Rendered items/index.html.haml within layouts/application (4.6ms)
+I, [2020-04-04T10:03:35.197418 #21238]  INFO -- : [6fe70925-c2d7-4195-b2b9-52f16b126d9d] Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+I, [2020-04-04T10:03:35.349535 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c] Started GET "/" for 175.177.41.43 at 2020-04-04 10:03:35 +0000
+I, [2020-04-04T10:03:35.350261 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c] Processing by ItemsController#index as HTML
+I, [2020-04-04T10:03:35.351148 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendering items/index.html.haml within layouts/application
+D, [2020-04-04T10:03:35.352869 #21238] DEBUG -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+I, [2020-04-04T10:03:35.353495 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendered items/_main-header.html.haml (2.2ms)
+D, [2020-04-04T10:03:35.354530 #21238] DEBUG -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+I, [2020-04-04T10:03:35.354660 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendered items/_main-top.html.haml (1.0ms)
+I, [2020-04-04T10:03:35.355359 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendered items/_main-footer.html.haml (0.6ms)
+I, [2020-04-04T10:03:35.355682 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendered items/_camera-btn.html.haml (0.2ms)
+I, [2020-04-04T10:03:35.355748 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c]   Rendered items/index.html.haml within layouts/application (4.5ms)
+I, [2020-04-04T10:03:35.356394 #21238]  INFO -- : [2794bd95-339f-4001-bab0-133eb1bd661c] Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+D, [2020-04-04T10:04:35.630757 #23739] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2020-04-04T10:04:35.631032 #23739] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3938242972240292415', 0);[0m
+D, [2020-04-04T10:04:35.639806 #23739] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2020-04-04T10:04:35.646331 #23739] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-04-04T10:04:35.649120 #23739] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-04-04T10:04:35.650016 #23739] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-04-04T10:04:35.650250 #23739] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3938242972240292415')[0m

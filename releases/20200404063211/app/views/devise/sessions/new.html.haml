@@ -1,0 +1,30 @@
+.device.body
+  .header
+    = render "devise/shared/header"
+  .sessions_main
+    .container.make_account
+      %p アカウントをお持ちでない方はこちら
+      .btn.blue
+        =link_to "新規会員登録","/users/sign_up",class: "btn blue__link"
+    .container.sign_in
+      .sns_links
+        .btn.facebook
+          =link_to "Facebookでログイン","https://www.facebook.com/",class: "btn facebook__link"
+          = icon("fab", "facebook-square",class: "facebook_logo")
+        .btn.google
+          = icon("fab", "google",class: "google_logo")
+          =link_to "Googleでログイン","https://www.google.com/",class: "btn google__link"
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        - if resource.errors[:password].present?
+          %p.red メールアドレスまたはパスワードが違います
+        .account_info
+          = f.text_field :email, class: 'input_box', placeholder: 'メールアドレス', autofocus: true
+        .account_info
+          = f.password_field :password, class: 'input_box', placeholder: 'パスワード', autofocus: true
+        .not_robot
+          = recaptcha_tags
+          - if resource.errors.messages[:base].present?
+            %p.red= message
+        = f.submit 'ログイン', class: 'btn red', id: "sessions_btn"
+      = link_to "パスワードをお忘れの方","#", class: "p"
+  = render "devise/shared/footer"

@@ -1,0 +1,551 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin size($height, $width, $padding) {
+  height: $height;
+  width: $width;
+  padding: $padding;
+}
+@mixin color($backgroundcolor, $color) {
+  background-color: $backgroundcolor;
+  color: $color;
+}
+
+.main {
+  @include size(100%, 100%, 0);
+  position: relative;
+  .header {
+    @include size(100px, 100%, 0);
+    &__form {
+      @include size(100%, 100%, 0 50px);
+      max-width: 1120px;
+      margin: auto;
+      &__box {
+        @include size(60px, 100%, 0);
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        a {
+          list-style: none;
+          margin-right: 10px;
+          float: left;
+        }
+        &--logo {
+          @include size(50px, 140px, 0);
+          object-fit: contain; 
+        }
+        &__input {
+          @include size(35px, 100%, 0);
+          margin:10px 0 0 20px;
+          float: right;
+          &--text {
+            @include size(100%, 100%, 5px);
+            float: left;
+          }
+        } 
+        &--btn {
+          @include size(35px, 50px, 0);
+          @include color(#3CCACE, 0);
+          margin-top: 10px;
+          float: right;
+          i {
+            @include color(0, white);
+            font-size: 1.2rem;
+            font-family: "Font Awesome 5 Free";
+          }
+        }
+      }
+      &__links {
+        &__link1 {
+          float: left;
+          list-style: none;
+          &--category {
+            text-decoration: none;
+            margin-right: 20px;
+          }
+          &--brand {
+            text-decoration: none;
+          }
+        }
+        &__link2 {
+          float: right;
+          list-style: none;
+          &--login {
+            text-decoration: none;
+            margin-right: 20px;
+          }
+          &--signin {
+            text-decoration: none;
+          }
+        }
+        a {
+          @include color(0, #3f3f3f);
+          font-size: 0.9rem;
+        }
+        a:hover {
+          color: #ffa500;
+        }
+      }
+    }  
+  }
+  .image1 {
+    @include size(600px, 100%, 0);
+    &--img {
+      @include size(100%, 100%, 0);
+      object-fit: cover;
+      position: relative;
+    }
+    &--text1 {
+      font-size: 3.7rem;
+      position: absolute;
+      bottom: 380px;
+      left: 90px;
+    }
+    &--text2 {
+      font-size: 1.2rem;
+      position: absolute;
+      bottom: 310px;
+      left: 90px;
+    }
+    p {
+      color: white;
+      text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
+    }
+    &--badge {
+      @include size(100px, 400px, 0);
+      position: absolute;
+      left: 60px;
+      bottom: 210px;
+      display: flex;
+      justify-content: center;
+      &__AppStore {
+        @include size(65%, 40%,0);
+        margin-top: 15px;
+      }
+      &__Google {
+        @include size(87%,50%,0);
+        margin-top: 5px;
+      }
+      img:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .image2{
+    @include size(auto, 100%,60px 20px);
+    
+    &__title {
+      @include size(100px, 350px, 0);
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: auto; 
+      position: relative;
+    }
+    &__title::after {
+      content: "";
+      @include size(4px, 70px,0);
+      background-color: #3CCACE;
+      position: absolute;
+      bottom: 40px;
+      left: 40%;
+      
+    }
+    &__box {
+      @include size(100%, 100%,0);
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      &__images {
+        @include size(50%, 30%,0);
+        &--1 {
+          @include size(100%, 100%, 0);
+          object-fit: cover;
+        }
+        &--2 {
+          @include size(100%, 100%, 0);
+          object-fit: cover;
+        }
+        &--3 {
+          @include size(100%, 100%, 0);
+          object-fit: cover; 
+        }
+        h2 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 20px;
+          span {
+            @include color(0,#3CCACE);
+          }
+        } 
+        p {
+          font-size: 1.1rem;
+        }
+        .text--3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .image3 {
+    @include size(400px, 100%, 0);
+    position: relative;
+    &--image {
+      @include size(100%, 100%, 0);
+      object-fit: cover;
+      object-position: 30% 100%;
+    }
+    &--text1 {
+      font-size: 1.7rem;
+      font-weight: bold;
+      position: absolute;
+      top: 100px;
+      left: 160px;
+    }
+    &--text2 {
+      font-size: 1.1rem;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+    }
+    p {
+      color: white;
+      text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
+    }
+    &--badge {
+      @include size(100px, 400px, 0);
+      position: absolute;
+      left: 150px;
+      bottom: 70px;
+      display: flex;
+      justify-content: center;
+      &__AppStore {
+        @include size(65%, 40%,0);
+        margin-top: 15px;
+      }
+      &__Google {
+        @include size(87%,50%,0);
+        margin-top: 5px;
+      }
+      img:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .image4{
+    @include size(750px, 100%,30px 150px);
+    &__title {
+      @include size(100px, 100%, 0);
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+      position: relative;
+    }
+    &__title::after {
+      content: "";
+      @include size(4px, 70px,0);
+      background-color: #3CCACE;
+      position: absolute;
+      bottom: 40px;
+      left: 47%;
+    }
+    &__box {
+      @include size(90%, 90%,0);
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      &__images {
+        @include size(50%, 28%,0);
+        &--1 {
+          @include size(100%, 85%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        &--2 {
+          @include size(100%, 85%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        &--3 {
+          @include size(100%, 85%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        h2 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-align: center;
+          margin: 20px 0 10px 0;
+          span {
+            @include color(0,#3CCACE);
+          }
+        } 
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .items {
+    @include size(980px, 100%, 60px 90px 0 90px);
+    @include color(#f5f5f5,0);
+    
+    &__title1 {
+      @include size(100px, 100%,0);
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      p {
+        @include color(0,#3CCACE);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    &__list1 {
+      @include size(30%, auto,0);
+      max-width: 800px;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      &__category {
+        @include size(auto,30%,0);
+        @include color(white,0);
+        text-decoration: none;
+        &__images {
+          @include size(70%, 100%, 0);
+          img {
+            background-size: cover;
+            object-fit: contain;
+            object-position: center;
+          }
+          
+        }
+        &--data1 {
+          @include size(30%,100%,0 15px 0 15px);
+          @include color(0,#3f3f3f);
+          display: flex;
+          flex-direction: column;
+          &__name {
+            @include size(30%,100%,0);
+          }
+          &__content {
+            @include size(30%,100%,0); 
+            &--price {
+              float: left;
+            }
+            &--star {
+              display: flex;
+              float: right;
+              i {
+                @include size(20px, 20px, 0);
+                margin-right: 5px;
+              }
+            }
+          }
+          &__tax {
+            @include size(20%,100%,0);
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        } 
+      }
+    }
+    &__title2 {
+      @include size(100px, 100%,0);
+      margin:70px 0 30px 0;
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        @include color(0,#3CCACE);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    &__list2 {
+      @include size(30%, auto,0);
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      &__brand {
+        @include size(auto,30%,0);
+        @include color(white,0);
+        text-decoration: none;
+        &--item1 {
+          @include size(70%, 100%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        &--item2 {
+          @include size(70%, 100%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        &--item3 {
+          @include size(70%, 100%, 0);
+          object-fit: contain;
+          object-position: center;
+        }
+        &--data2 {
+          @include size(30%,100%,0 15px 0 15px);
+          @include color(0,#3f3f3f);
+          display: flex;
+          flex-direction: column;
+          &__name {
+            @include size(30%,100%,0);
+          }
+          &__content {
+            @include size(30%,100%,0);
+            &--price {
+              float: left;
+            }
+            &--star {
+              display: flex;
+              float: right;
+              i {
+                @include size(20px, 20px, 0);
+                margin-right: 5px;
+              }
+            }
+          }
+          &__tax {
+            @include size(20%,100%,0);
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        } 
+      }
+    }
+  }
+  
+  .footer {
+    &__image5 {
+      @include size(350px, 100%, 100px 70px);
+      background-image: url(bg-appBanner-pict.jpg);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+        margin: auto;
+      &--text1  {
+        @include size(20%, 100%,0);
+        @include color(0,white);
+        text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      &--text2 {
+        @include size(20%, 100%,0);
+        @include color(0,white);
+        text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
+        font-size: 2.2rem;
+      }
+      &--badge {
+        @include size(100px, auto, 0);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        img:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    &__contents {
+      @include size(350px, 100%, 60px 5% 0 5%);
+      @include color(#272727,0);
+      margin: auto;
+      position: relative;
+      &__menu { 
+        @include size(100%, 100%, 0);
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        &__company {
+          @include size(80%, 20%, 0);  
+        }
+        &__search {
+          @include size(60%, 20%, 0);
+        }
+        &__help {
+          @include size(80%, 20%, 0);
+        }
+        .list {
+          @include size(20%, 200px, 0);
+          @include color(0,white);
+          text-decoration: none;
+          font-size: 0.8rem;
+        }
+        h2 {
+          @include color(0,white);
+          text-align: center;
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+        p {
+          margin-bottom: 15px;
+          text-align: center;
+        } 
+      }
+      &__logo {
+        @include size(45px, 100%, 0);
+        max-width: 160px;
+        position: absolute;
+        left: 44%;
+        bottom: 20%;
+        img {
+          @include size(100%, 100%, 0);
+          object-fit: contain; 
+        }
+        p {
+          @include color(0,white);
+          font-size: 0.9rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .camera__button {
+    @include size(120px, 120px, 15px);
+    @include color(#3CCACE,0);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    p {
+      @include color(0,white);
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    img {
+      @include size(60px, 60px, 0);
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.device.body
+  = render "devise/shared/header"
+  .registrations_main
+    .container.head
+      %h1 本人情報の登録
+  .registrations_main
+    .container.inner
+      = form_for @address do |f|
+        .group
+          %h2
+            郵便番号
+            %span 任意
+          = f.text_field :postcode, class: 'input_box', placeholder: '例)1234567', autofocus: true
+        .group
+          %h2
+            都道府県
+            %span 任意
+          = f.text_field :prefecture, class: 'input_box', placeholder: '--', autofocus: true
+        .group
+          %h2
+            市区町村
+            %span 任意
+          = f.text_field :city, class: 'input_box', placeholder: '例)横浜市緑区', autofocus: true
+        .group
+          %h2
+            番地
+            %span 任意
+          = f.text_field :block, class: 'input_box', placeholder: '例)青山1−1−1', autofocus: true
+        .group
+          %h2
+            建物名
+            %span 任意
+          = f.text_field :building, class: 'input_box', placeholder: '例)柳ビル103', autofocus: true
+        .group
+          %h2
+            電話番号
+            %span 任意
+          = f.text_field :phone_number, class: 'input_box', placeholder: '09000000000', autofocus: true
+        = f.submit '登録する', class: 'btn red'
+      .about_registrations
+        %p
+          = link_to "本人情報の登録について>>", "#"
+  = render "devise/shared/footer"

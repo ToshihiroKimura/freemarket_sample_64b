@@ -1,0 +1,244 @@
+.wapper {
+  width: 100%;
+  background-color: lightgray;
+  .header_item{
+    height: 100px;
+    width: auto;
+    text-align:center;
+  }
+  .hurima_logo{
+    background:url(material/logo/logo-white.png);
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    height: 100%
+  }
+  .body_item{
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 3px;
+    .item_image {
+      margin-bottom: 50px;
+      .item_image_paragraph {
+        .file-btn {
+          height: 150px;
+          margin-top: 10px;
+          background-color: #f5f5f5;
+          border: 1.5px dashed #ddd; 
+          cursor: pointer;
+          position: relative;
+        .file { 
+          display: none;
+        }
+        .icon {
+          font-size: 1.5rem;
+          position: absolute;
+          left: 47%;
+          top: 30px;
+        }
+        p,br{
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 70px;
+        }
+       }
+      }
+    }
+    .item_name  {
+      margin-bottom: 40px;
+      .name_field {
+        height: 50px;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 3px; /*ボックス角の丸み*/
+        border: 1.5px solid #ddd; 
+      }
+    }
+    .item_description {
+      margin-bottom: 40px;
+    }
+    .item_category {
+      margin-bottom: 40px;
+    }
+    .item_brand {
+      margin-bottom: 40px;
+      .name_field {
+        height: 50px;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 3px; 
+        border: 1.5px solid #ddd; 
+      }
+    }
+    .item_status {
+      margin-bottom: 40px;
+    }
+    .item_delivery {
+      margin-bottom: 40px;
+    }
+    .item_delivery_burden {
+      margin-bottom: 20px;
+    }
+    .item_delivery_area {
+      margin-bottom: 20px;
+    }
+    .item_price {
+      height: 150px;
+      width: 100%;
+      position: relative;
+      .text {
+        width: 40%;
+        float: left;
+        margin-top: 23px;
+     }
+      .item_price_number {
+        float: right;
+        width: 300px;
+        height: 50px;
+        display: flex;
+        margin-top: 10px;
+        p {
+          line-height: 50px;
+          text-align: center;
+          margin-right: 10px;
+        }
+        .input-form_price { 
+          height: 50px;
+          width: 100%;
+          padding-right: 20px;
+          border-radius: 3px;
+          border: 1.5px solid #ddd;
+          text-align: end;
+        }
+        input[type=number]::-webkit-inner-spin-button, /*販売価格のスピンボタン削除*/
+        input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+    .item_price_fee {
+      display: flex;
+      height: 50px;
+      border-bottom:solid 1px #dcdcdc;
+      p {
+        font-size: 0.9rem;
+        color: #333333;
+        margin-right: 400px;
+      }
+    }
+    #item_price_number {
+      width: 80px;
+      text-align: end;
+    }
+    .item_sell_btn{
+      height: 100%;
+      text-align: center;
+      margin-top: 50px;
+      .submit-btn {
+        height: 100%;
+        .listing_button {
+          display: block;
+          width: 60%;
+          height: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          margin:0 auto;
+          margin-bottom: 10px;
+          background-color: #ea5550;
+          border-radius: 5px;
+          color: white;
+          cursor: pointer;
+        }
+        .listing_button:hover {
+          background-color: #ce5242;
+        }
+        a {
+          color: #00bfff;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration:underline;
+          color: #87cefa;
+        }
+      }
+    }
+    
+    select::-ms-expand {
+      display: none;
+    }
+    select {
+      -webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+      height: 50px;
+      width: 100%; /*親要素いっぱい広げる*/
+      background-image: url(/assets/chevron-down-solid.svg);
+      background-repeat: no-repeat;
+      background-size: 20px 15px;
+      background-position: right 15px center;
+      background-color: white;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 10px 15px; /*ボックスを大きくする*/
+      font-size: 16px;
+      border-radius: 3px; /*ボックス角の丸み*/
+      border: 1.5px solid #ddd; /*枠線*/
+      box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+      cursor: pointer;
+      }
+    .item_description textarea {
+      height: 200px;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 10px 15px; /*ボックスを大きくする*/
+      font-size: 16px;
+      border-radius: 3px; /*ボックス角の丸み*/
+      border: 2px solid #ddd; /*枠線*/
+      box-sizing: border-box;
+   }
+   
+   .text1 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #a9a9a9;
+   }
+   .text {
+     display: flex;
+     font-size: 0.9rem;
+     margin-bottom: 10px;
+     color: #333333;
+     p {
+       font-weight: bold;
+       margin-right: 10px;
+    }
+    span {
+      padding: 0 5px;
+      background-color: red;
+      color: white;
+      display: inline-block;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .brand_text {
+      background-color: green;
+    }
+   }
+  img{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    height: 200px;
+    }
+  }
+
+  .footer_item{
+    height: 80px;
+  }
+}

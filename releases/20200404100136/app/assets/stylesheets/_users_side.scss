@@ -1,0 +1,127 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+}
+
+
+@mixin size($height, $width, $padding) {
+  height: $height;
+  width: $width;
+  padding: $padding;
+}
+@mixin color($backgroundcolor, $color) {
+  background-color: $backgroundcolor;
+  color: $color;
+}
+
+
+
+.side-body {
+  @include size(250px, 300px, 0);
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  &__list__gray {
+    @include size(40px, 295px, 0);
+    @include color(#dddddd, 0);
+    list-style: none;
+    justify-content: space-around;
+    margin-left: 2px;
+    .list {
+      @include color(0,#272727);
+      text-decoration: none;
+      font-size: 1.0rem;
+      li {
+        top: 10px;
+        position: relative;
+      }
+        P2 {
+          top:1px;
+          left: 90%;
+          position: absolute;
+        }
+    }
+  }
+  &__list {
+    @include size(500px, 300px, 2px);
+    @include color(#FFFFFF, 0);
+    max-width: 100%;
+    display: block;
+    justify-content: space-around;
+    .list {
+      @include size(40px, 200px , 2px);
+      @include color(#FFFFFF, #272727);
+      text-decoration: none;
+      font-size: 1.0rem;
+      bottom: 1px;
+      li {
+        display: block;
+        top: 1px;
+        position: relative;
+        background-color: #dddddd;
+        line-height: 40px;
+        bottom: 1px;
+      }
+        P2 {
+          top:1px;
+          left: 90%;
+          position: absolute;
+        }
+    }
+  }
+  &__confing {
+    @include size(350px, 300px , 0);
+    @include color(#bbbbbb, 0);
+    font-size: 1.0rem;
+    bottom: 2px;
+    &__list {
+      @include size(350px, 300px, 0);
+      @include color(#FFFFFF, #272727);
+      max-width: 100%;
+      top: 20px;
+      display: block;
+      justify-content: space-around;
+      text-decoration: none;
+      .list {
+        @include size(40px, 300px , 0);
+        @include color(#FFFFFF,#272727);
+        text-decoration: none;
+        font-size: 1.0rem;
+      }
+      li {
+        display: block;
+        margin-bottom: 18px;
+        position: relative;
+        background-color: #dddddd;
+        line-height: 40px;
+      }
+        P2 {
+          top:2px;
+          left: 90%;
+          position: absolute;
+        }
+    }
+  }
+}
+
+.camera__button {
+  @include size(120px, 120px, 15px);
+  @include color(#3CCACE,0);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  p {
+    @include color(0,white);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  img {
+    @include size(60px, 60px, 0);
+    margin: auto;
+  }
+}
