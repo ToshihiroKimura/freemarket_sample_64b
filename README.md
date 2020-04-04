@@ -10,8 +10,8 @@
 |delivery_days|string|null: false|
 |category|references|null: false, foreign_key:true|
 |brand|references|foreign_key:true|
-|solder_id|integer||
-|buyer_id|integer||
+|solder_id|integer|| #1
+|buyer_id|integer|| #2
 ### Association
 - has_many :images
 - belongs_to :category
@@ -55,8 +55,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null:false, foreign_key:true|
-|customer_id|string|null:false|
-|card_id|string|null:false|
+|customer_id|string|null:false| #user_id??
+|card_id|string|null:false| #payjp
 ### Association
 - belongs_to :user
 ## imagesテーブル
