@@ -1,5 +1,5 @@
 #サーバ上でのアプリケーションコードが設置されているディレクトリを変数に入れておく
-app_path = File.expand_path('/var/www/freemarket_sample_64b')
+app_path = '/var/www/freemarket_sample_64b'
 
 #アプリケーションサーバの性能を決定する
 worker_processes 1
