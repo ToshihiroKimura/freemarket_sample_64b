@@ -19,10 +19,10 @@ set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/reemarket_sample_64b.pem'] 
 
 # プロセス番号を記載したファイルの場所
-set :unicorn_pid, -> { "var/www/freemarket_sample_64b/tmp/pids/unicorn.pid" }
+set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 
 # Unicornの設定ファイルの場所
-set :unicorn_config_path, -> { "var/www/freemarket_sample_64b/config/unicorn.rb" }
+set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 
 # secrets.yml用のシンボリックリンクを追加
