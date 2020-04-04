@@ -20,5 +20,4 @@ class User < ApplicationRecord
   validates :birthday,            presence: true
   validates :email,               presence: true, uniqueness: true
   validates :encrypted_password,  presence: true, format: { with: /\A(?=.*[^\d])+/, allow_blank: true}
-
 end

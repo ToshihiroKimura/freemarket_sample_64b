@@ -1,0 +1,57 @@
+
+.side-body
+  .side-body__list__gray
+    =link_to new_user_path, class: "list" do
+      %li
+        マイページ
+        %p2
+          >
+  .side-body__list
+    =link_to root_path, class: "list" do
+      %li
+        出品する
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        出品した商品-出品中
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        出品した商品-取引中
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        出品した商品-売却済み
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        購入した商品-取引中
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        購入した商品-過去の取引
+        %p2
+          >
+    =link_to root_path, class: "list" do
+      %li
+        お問い合わせ
+        %p2
+          >
+  .side-body__confing
+    設定
+    .side-body__confing__list
+      =link_to root_path, class: "list" do
+        %li
+          本人情報
+          %p2
+            >
+      = link_to new_card_path, class: "list" do
+        %li
+          支払い方法
+          %p2
+            >

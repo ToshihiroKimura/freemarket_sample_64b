@@ -72,8 +72,11 @@ gem 'fog-aws'
 
 # reCaptchaの導入
 gem 'recaptcha', require: "recaptcha/rails"
+gem 'carrierwave'
 gem 'mini_magick'
-gem 'ancestry'
 
 # binding.pryの導入
-# gem 'pry-rails'
+#gem 'pry-rails'
+
+# pay.jpの導入
+gem 'payjp'
