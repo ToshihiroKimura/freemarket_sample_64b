@@ -8,7 +8,7 @@ worker_processes 1
 # working_directory File.expand_path('var/www/freemarket_sample_64b/current', __FILE__)
 
 #Unicornの起動に必要なファイルの設置場所を指定
-pid "#{app_path}/shared/tmp/pids/unicorn.pid"
+pid "var/www/freemarket_sample_64b/shared/tmp/pids/unicorn.pid"
 
 #ポート番号を指定
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
