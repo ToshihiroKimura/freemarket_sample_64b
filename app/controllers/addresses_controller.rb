@@ -1,6 +1,6 @@
 class AddressesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_address, only: [:show, :edit, :update]
+  before_action :set_address, only: [:edit, :update]
   
   def new
     @address = Address.new
@@ -15,15 +15,12 @@ class AddressesController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def edit
   end
 
   def update
     if Address.update(address_params)
-      render :show
+      redirect_to "/users/#{current_user.id}"
     else
       render :edit
     end

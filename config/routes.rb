@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   root "items#index"
   resources :items, only: [:show , :edit, :new]
   resources :images, only: [:index]
-  resources :users, only: [:new]
-  resources :users_side, only: [:new , :show]
-  resources :addresses, only: [:new, :create, :show, :edit, :update]
+  resources :users, only: [:new, :show]
+  resources :addresses, only: [:new, :create, :edit, :update]
   resources :cards, :cards_delate, only: [:index, :new, :show]do
     ENV['PAYJP_PRIVATE_KEY']
     ENV['PAYJP_KEY']
@@ -20,4 +19,3 @@ Rails.application.routes.draw do
     end
   end
 end
-
