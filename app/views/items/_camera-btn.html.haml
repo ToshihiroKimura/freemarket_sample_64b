@@ -1,4 +1,10 @@
-=link_to new_item_path,class: "camera__button" do
-  %p
-    出品する
-  =image_tag("icon_camera.png")
+- if user_signed_in? && current_user.id
+  =link_to new_item_path,class: "camera__button" do
+    %p
+      出品する
+    =image_tag("icon_camera.png")
+- else
+  =link_to new_user_session_path,class: "camera__button" do
+    %p
+      出品する
+    =image_tag("icon_camera.png")

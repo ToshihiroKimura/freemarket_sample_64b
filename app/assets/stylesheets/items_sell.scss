@@ -5,13 +5,10 @@
     height: 100px;
     width: auto;
     text-align:center;
-  }
-  .hurima_logo{
-    background:url(material/logo/logo-white.png);
-    background-position: center;
-    background-size: 25%;
-    background-repeat: no-repeat;
-    height: 100%
+    .app_logo{
+      width: 160px;
+      margin-top: 30px;
+    }
   }
   .body_item{
     height: 100%;
@@ -229,16 +226,40 @@
       background-color: green;
     }
    }
-  img{
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    height: 200px;
-    }
   }
 
-  .footer_item{
-    height: 80px;
-  }
+    .footer {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .links{
+        margin: 0 auto;
+        margin-top: 20px;    
+        ul {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          .footer_li {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #2e2e2e;
+            font-size: 0.7rem;
+          }
+          .footer_li:hover {
+            text-decoration:underline;
+            color: #707070;
+          } 
+        }
+      }
+      .app_logo {
+        width: 160px;
+        // margin-top: 30px;
+      }
+      h3 {
+        font-size: 0.8rem;
+        // margin-bottom: 50px;
+        color: #2e2e2e;
+      }
+    }
+  
 }

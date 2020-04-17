@@ -2,7 +2,20 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "items#index"
-  resources :items, only: [:show , :edit, :new]
+  resources :items, only: [:index, :show , :edit, :new, :create] do
+    collection do
+      get 'category_children',defaults:{format:'json'}
+      get 'category_grandchildren',defoults:{format:'json'}
+    end
+  end
+  resources :items, only: [:show , :edit, :new] do
+    member do
+      get 'buy_confirmation'
+      post 'payment'
+      get 'buy_complete'
+    end
+end
+
   resources :images, only: [:index]
   resources :users, only: [:new, :show]
   resources :addresses, only: [:new, :create, :edit, :update]
