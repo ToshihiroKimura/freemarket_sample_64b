@@ -286,6 +286,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_hash
+  ancestry
   byebug
   capistrano
   capistrano-bundler
