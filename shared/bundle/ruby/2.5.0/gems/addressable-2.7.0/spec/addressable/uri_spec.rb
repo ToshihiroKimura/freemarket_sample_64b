@@ -2889,7 +2889,7 @@ describe Addressable::URI, "when parsed from " +
     )
   end
 
-  it "should have a route of '../../' from " +
+  it "should have a route of '../../../' from " +
       "'http://example.com:8080/path/to/'" do
     expect(@uri.route_from("http://example.com:8080/path/to/")).to eq(
       Addressable::URI.parse("../../")
@@ -3805,7 +3805,7 @@ describe Addressable::URI, "when parsed from " +
     expect(@uri.normalize).to be_eql(@uri)
   end
 
-  it "should have a route of '../../' to " +
+  it "should have a route of '../../../' to " +
       "'http://user:pass@example.com/path/'" do
     expect(@uri.route_to("http://user:pass@example.com/path/")).to eq(
       Addressable::URI.parse("../../")
@@ -5289,7 +5289,7 @@ describe Addressable::URI, "with a base uri of 'http://a/b/c/d;p?q'" do
   end
 
   # Section 5.4.1 of RFC 3986
-  it "when joined with '../../' should resolve to http://a/" do
+  it "when joined with '../../../' should resolve to http://a/" do
     expect((@uri + "../../").to_s).to eq("http://a/")
     expect(Addressable::URI.join(@uri.to_s, "../../").to_s).to eq("http://a/")
   end
