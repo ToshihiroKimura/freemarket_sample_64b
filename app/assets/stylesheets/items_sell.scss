@@ -227,39 +227,37 @@
     }
    }
   }
-
-    .footer {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      .links{
-        margin: 0 auto;
-        margin-top: 20px;    
-        ul {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 20px;
-          .footer_li {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #2e2e2e;
-            font-size: 0.7rem;
-          }
-          .footer_li:hover {
-            text-decoration:underline;
-            color: #707070;
-          } 
+  .send_footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .links{
+      margin: 0 auto;
+      margin-top: 20px;    
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .footer_li {
+          margin: 0 20px;
+          text-decoration: none;
+          color: #2e2e2e;
+          font-size: 0.7rem;
         }
-      }
-      .app_logo {
-        width: 160px;
-        // margin-top: 30px;
-      }
-      h3 {
-        font-size: 0.8rem;
-        // margin-bottom: 50px;
-        color: #2e2e2e;
+        .footer_li:hover {
+          text-decoration:underline;
+          color: #707070;
+        } 
       }
     }
-  
+    .app_logo {
+      width: 160px;
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 0.8rem;
+      margin-bottom: 50px;
+      color: #2e2e2e;
+    }
+  }
 }

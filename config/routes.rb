@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :items, only: [:index, :show , :edit, :new, :create] do
     collection do
       get 'category_children',defaults:{format:'json'}
-      get 'category_grandchildren',defoults:{format:'json'}
+      get 'category_grandchildren',defaults:{format:'json'}
     end
   end
   resources :items, only: [:show , :edit, :new] do

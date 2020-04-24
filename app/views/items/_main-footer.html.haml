@@ -1,15 +1,16 @@
-.footer
-  .footer__image5
-    %h2.footer__image5--text1
+.top_footer
+  .top_footer__image5
+    =image_tag("bg-appBanner-pict.jpg", width: "100%", height: "100%") 
+    %h2.top_footer__image5--text1
       だれでもかんたん、人生を変えるフリマアプリ
-    %p.footer__image5--text2
+    %p.top_footer__image5--text2
       今すぐ無料ダウンロード！
-    .footer__image5--badge 
-      =image_tag("Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg", width: "185px", class: "footer__image5--badge__AppStore")
-      =image_tag("google-play-badge.png", width: "225px", class: "footer__image5--badge__Google")
-  .footer__contents
-    .footer__contents__menu
-      .footer__contents__menu__company
+    .top_footer__image5--badge 
+      =image_tag("Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg", width: "42%",class: "top_footer__image5--badge__AppStore")
+      =image_tag("google-play-badge.png", width: "59%",class: "top_footer__image5--badge__Google")
+  .top_footer__contents
+    .top_footer__contents__menu
+      .top_footer__contents__menu__company
         %h2
           FURIMAについて
         %p
@@ -20,14 +21,14 @@
           =link_to "FURIMA利用規約", root_path, class: "list"
         %p
           =link_to "ポイントに関する特約", root_path, class:"list"
-      .main-footer__menu__search
+      .top_footer__menu__search
         %h2 
           FURIMAを見る
         %p
           =link_to "カテゴリー一覧", root_path, class: "list"
         %p
           =link_to "ブランド一覧", root_path, class: "list"
-      .main-footer__menu__help
+      .top_footer__menu__help
         %h2 
           ヘルプ&ガイド
         %p
@@ -36,7 +37,7 @@
           =link_to "FURIMAロゴ利用ガイドライン", root_path, class: "list"
         %p
           =link_to "お知らせ", root_path, class: "list"
-    = link_to "#",class:"footer__contents__logo" do
+    = link_to "#",class:"top_footer__contents__logo" do
       =image_tag("logo-white.png")
       %p 
         © FURIMA
