@@ -19,7 +19,7 @@ end
   resources :images, only: [:index]
   resources :users, only: [:new, :show]
   resources :addresses, only: [:new, :create, :edit, :update]
-  resources :cards, only: [:new, :pay, :show, :delete]do
+  resources :cards, only: [:new, :show]do
     collection do
       post 'pay', to: 'cards#pay'
       post 'delete', to: 'cards#delete'

@@ -1,8 +1,8 @@
 クレジットカード一覧
 - if @card.present?
-  = image_tag @card_src, width: '26', height: '20', alt: @card_brand
+  = image_tag @card_src, alt: @card_brand
   = "**** **** **** " + @card_information.last4
   - exp_month = @card_information.exp_month.to_s
   - exp_year = @card_information.exp_year.to_s.slice(2,3)
   = exp_month + " / " + exp_year
-削除する
+  =link_to "削除する", delete_cards_path, {method: :post}
