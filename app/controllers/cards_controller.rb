@@ -9,20 +9,22 @@ class CardsController < ApplicationController
   end
 
   def pay
-
-    customer = Payjp::Customer.create(        # customerの定義、ここの情報を元に、カード情報との紐付けがされる
-      card: params['payjp_token']
-    )
-
-    @card = Card.create(                  # カードテーブルのデータの作成
-      user_id: current_user.id,
-      customer_id: customer.id,
-    )
-    binding.pry
-    if @card.save
-      redirect_to root_path
-    else
+    if params["payjp_token"].blank?
       redirect_to action: "new"
+    else
+      customer = Payjp::Customer.create(        # customerの定義、ここの情報を元に、カード情報との紐付けがされる
+        card: params["payjp_token"]
+      )
+
+      @card = Card.create(                  # カードテーブルのデータの作成
+        user_id: current_user.id,
+        customer_id: customer.id,
+      )
+      if @card.save
+        redirect_to root_path
+      else
+        redirect_to action: "new"
+      end
     end
   end
 
