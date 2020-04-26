@@ -1,22 +1,22 @@
 class CardsController < ApplicationController
   
   require "payjp"
-  Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"] # APIキーの呼び出し
-  # before_action :set_card, only: [:new]
+  Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
+  before_action :set_card
 
   def new
-    redirect_to action: "show" if @card.present?
+    redirect_to "/cards/#{current_user.id}" if @card.present?
   end
 
   def pay
     if params["payjp_token"].blank?
       redirect_to action: "new"
     else
-      customer = Payjp::Customer.create(        # customerの定義、ここの情報を元に、カード情報との紐付けがされる
+      customer = Payjp::Customer.create(
         card: params["payjp_token"]
       )
 
-      @card = Card.create(                  # カードテーブルのデータの作成
+      @card = Card.create(
         user_id: current_user.id,
         customer_id: customer.id,
         card_id: customer.default_card
@@ -41,8 +41,7 @@ class CardsController < ApplicationController
   #     redirect_to action: "new"
   # end
 
-  def show #Cardのデータpayjpに送り情報を取り出す
-    @card = Card.where(user_id: current_user.id).first if Card.where(user_id: current_user.id).present?
+  def show
     customer = Payjp::Customer.retrieve(@card.customer_id)
     @card_information = customer.cards.retrieve(@card.card_id)
     @card_brand = @card_information.brand
@@ -60,5 +59,9 @@ class CardsController < ApplicationController
     when "Discover"
       @card_src = "discover.svg"
     end
+  end
+
+  def set_card
+    @card = Card.where(user: current_user).first if Card.where(user: current_user).present?
   end
 end
