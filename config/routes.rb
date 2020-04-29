@@ -15,20 +15,13 @@ Rails.application.routes.draw do
       get 'buy_complete'
     end
 end
-
   resources :images, only: [:index]
   resources :users, only: [:new, :show]
   resources :addresses, only: [:new, :create, :edit, :update]
-  resources :cards, :cards_delate, only: [:index, :new, :show]do
-    ENV['PAYJP_PRIVATE_KEY']
-    ENV['PAYJP_KEY']
+  resources :cards, only: [:new, :show]do
     collection do
-      #payjpでトークン化を行う
       post 'pay', to: 'cards#pay'
-      #カード削除
       post 'delete', to: 'cards#delete'
-      #カード情報入力
-      post 'show', to: 'cards#show'
     end
   end
 end

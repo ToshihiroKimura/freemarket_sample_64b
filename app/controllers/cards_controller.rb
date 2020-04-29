@@ -1,57 +1,66 @@
 class CardsController < ApplicationController
-  
   require "payjp"
-  
+  before_action :set_card
+
   def new
-    #current_user.idでログインしてるユーザーのみ登録ができるようにしてます   
-    #card = Card.where(user_id: current_user.id)    
-    #カード登録がまだならshowページへ飛ぶ    
-    #redirect_to action: "show" if card.exists?
+    redirect_to "/cards/#{current_user.id}" if @card.present?
   end
 
-  def pay #payjpとCardのデータベース作成
-    Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
-    if params['payjp-token'].blank?
-      #paramsの中にjsで作った'payjpToken'が存在するか確かめる
+  def pay
+    if params["payjp_token"].blank?
       redirect_to action: "new"
     else
+      Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
       customer = Payjp::Customer.create(
-        description: '登録テスト', #なくてもOK
-        email: current_user.email, #なくてもOK
-        card: params['payjp-token'],
-        metadata: {user_id: current_user.id}
-        ) 
-      @card = Card.new(user_id: current_user.id, customer_id: customer.id, card_id: customer.default_card)
+        card: params["payjp_token"]
+      )
+      @card = Card.create(
+        user_id: current_user.id,
+        customer_id: customer.id,
+        card_id: customer.default_card
+      )
       if @card.save
-        redirect_to action: "show"
-        flash[:notice] = 'クレジットカードの登録が完了しました'
+        redirect_to root_path
       else
-        redirect_to action: "pay"
-        flash[:alert] = 'クレジットカード登録に失敗しました'
+        redirect_to action: "new"
       end
     end
   end
 
-  def delete #PayjpとCardデータベースを削除
-    card = Card.where(user_id: current_user.id).first
-    if card.blank?
-    else
+  def show
+    if @card.present?
       Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
-      customer = Payjp::Customer.retrieve(card.customer_id)
-      customer.delete
-      card.delete
+      customer = Payjp::Customer.retrieve(@card.customer_id)
+      @card_information = customer.cards.retrieve(@card.card_id)
+      @card_brand = @card_information.brand
+      case @card_brand
+      when "Visa"
+        @card_src = "visa.svg"
+      when "JCB"
+        @card_src = "jcb.svg"
+      when "MasterCard"
+        @card_src = "master-card.svg"
+      when "American Express"
+        @card_src = "american_express.svg"
+      when "Diners Club"
+        @card_src = "dinersclub.svg"
+      when "Discover"
+        @card_src = "discover.svg"
+      end
+    else
+      redirect_to new_card_path
     end
-      redirect_to action: "new"
   end
 
-  def show #Cardのデータpayjpに送り情報を取り出す
-    #card = Card.where(user_id: current_user.id).first
-    #if card.blank?
-      #redirect_to action: "new" 
-    #else
-      #Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
-      #customer = Payjp::Customer.retrieve(card.customer_id)
-      #@default_card_information = customer.cards.retrieve(card.card_id)
-    #end
+  def delete
+    Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
+    customer = Payjp::Customer.retrieve(@card.customer_id)
+    customer.delete
+    @card.delete
+    redirect_to "/users/#{current_user.id}"
+  end
+
+  def set_card
+    @card = Card.where(user: current_user).first if Card.where(user: current_user).present?
   end
 end

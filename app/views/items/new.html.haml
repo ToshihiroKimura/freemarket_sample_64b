@@ -8,6 +8,7 @@
         .text
           %p 出品画像
           %span 必須
+        .image_box
         .item_image_paragraph
           =f.fields_for :images do |i|
             = i.label :image, class: "image-file" do
@@ -88,20 +89,19 @@
         .submit-btn
           =f.submit "出品する", class: "listing_button"
           =link_to "戻る","#"
-  .footer_item
-    .send_footer
-      .links
-        %ul
-          %li
-            = link_to "プライバシーポリシー","#",class: "footer_li"
-          %li
-            = link_to "FURIMA利用規約","#",class: "footer_li"
-          %li
-            = link_to "特定商取引に関する表記","#",class: "footer_li"
-      .footer__logo
-        = link_to root_path do
-          = image_tag "logo-white.png",class:"app_logo"
-      %h3 © FURIMA
+  .send_footer
+    .links
+      %ul
+        %li
+          = link_to "プライバシーポリシー","#",class: "footer_li"
+        %li
+          = link_to "FURIMA利用規約","#",class: "footer_li"
+        %li
+          = link_to "特定商取引に関する表記","#",class: "footer_li"
+    .footer__logo
+      = link_to root_path do
+        = image_tag "logo-white.png",class:"app_logo"
+    %h3 © FURIMA
 
  
 

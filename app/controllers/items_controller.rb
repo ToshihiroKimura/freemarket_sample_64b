@@ -31,6 +31,18 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @item=Item.find(params[:id])
+    @image = @item.images.first
+    @images = @item.images.all
+    @solder=User.find(@item[:solder_id])
+    @grandchild_category = Category.find(@item[:category_id])
+    @child_category = @grandchild_category.parent
+    @parent_category = @child_category.parent
+    @delivery_charge = Deliverycharge.find(@item[:delivery_charge])
+    @delivery_area= Prefecture.find(@item[:delivery_area])
+    @delivery_days= Deliverydays.find(@item[:delivery_days])
+    @item_status=Itemstatus.find(@item[:item_status])
+
   end
 
   def edit
