@@ -9,23 +9,27 @@
         .group
           %h2
             郵便番号
-            %span 任意
-          = f.text_field :postcode, class: 'input_box', placeholder: '例)1234567', autofocus: true
+            %span 必須
+          = f.text_field :postcode, class: 'input_box', placeholder: '例)1234567', autofocus: true, id: 'postcode'
+          %p.red#alart_postcode
         .group
           %h2
             都道府県
-            %span 任意
-          = f.text_field :prefecture, class: 'input_box', placeholder: '--', autofocus: true
+            %span 必須
+          = f.text_field :prefecture, class: 'input_box', placeholder: '--', autofocus: true, id: 'prefecture'
+          %p.red#alart_prefecture
         .group
           %h2
             市区町村
-            %span 任意
-          = f.text_field :city, class: 'input_box', placeholder: '例)横浜市緑区', autofocus: true
+            %span 必須
+          = f.text_field :city, class: 'input_box', placeholder: '例)横浜市緑区', autofocus: true, id: 'city'
+          %p.red#alart_city
         .group
           %h2
             番地
-            %span 任意
-          = f.text_field :block, class: 'input_box', placeholder: '例)青山1−1−1', autofocus: true
+            %span 必須
+          = f.text_field :block, class: 'input_box', placeholder: '例)青山1−1−1', autofocus: true, id: 'block'
+          %p.red#alart_block
         .group
           %h2
             建物名
