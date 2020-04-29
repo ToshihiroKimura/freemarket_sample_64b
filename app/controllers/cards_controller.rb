@@ -7,7 +7,7 @@ class CardsController < ApplicationController
     redirect_to "/cards/#{current_user.id}" if @card.present?
   end
 
-  def pay
+  def create
     if params["payjp_token"].blank?
       redirect_to action: "new"
     else
@@ -61,6 +61,24 @@ class CardsController < ApplicationController
     @card.delete
     redirect_to "/users/#{current_user.id}"
   end
+
+  def purchase
+    Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
+    @card = Cards.where(user_id: current_user.id).first
+    @item = Items.find(params[:id])
+
+    #payjp経由で支払いを実行
+    charge = Payjp::Charge.create(
+      amount: @item.price,
+      customer: Payjp::Customer.retrieve(@card.customer_id),
+      currency: 'jpy'
+    )
+
+    #製品のbuyer_idを付与
+    @item_buyer= Items.find(params[:id])
+    @item_buyer.update(buyer_id: current_user.id)
+    redirect_to root_path
+end
 
   def set_card
     @card = Card.where(user: current_user).first if Card.where(user: current_user).present?
