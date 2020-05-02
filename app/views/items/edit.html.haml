@@ -18,7 +18,7 @@
                 %p 
                   ドラッグアンドドロップ
                   %br
-                    またはクリックしてファイルをダウンロード
+                    またはクリックしてファイルをアップロード
                 =i.file_field :image, class: 'file'
           - if @item.errors[:images].any?
             %p.error-message 画像がありません
@@ -51,7 +51,7 @@
           %p ブランド
           %span.brand_text 任意
         .item_brand_form
-          = f.text_field :brand_id, placeholder: "例  GUCCI", class: "name_field"
+          = f.text_field :brand, placeholder: "例  GUCCI", class: "name_field"
       .item_status
         .text
           %p 商品の状態
