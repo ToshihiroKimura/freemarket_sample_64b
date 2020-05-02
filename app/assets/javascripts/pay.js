@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", e => {
+
+  if(!$("#card_number")[0]) return false;
+
   Payjp.setPublicKey("pk_test_8faa5b73d6c45a161c7ff422");
   
   const btn = document.getElementById("token_submit");

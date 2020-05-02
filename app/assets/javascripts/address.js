@@ -1,4 +1,7 @@
 $(function(){
+
+  if(!$("#postcode")[0]) return false;
+
   let postcode = document.getElementById("postcode");
   let prefecture = document.getElementById("prefecture");
   let city = document.getElementById("city");
@@ -31,4 +34,5 @@ $(function(){
       alart_block.innerHTML = "番地は必須です";
     }
   },false);
+
 });
