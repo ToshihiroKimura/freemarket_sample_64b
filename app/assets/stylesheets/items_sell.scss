@@ -18,8 +18,30 @@
     padding: 50px;
     background-color: white;
     border-radius: 3px;
+    .title {
+      font-size: 1.8rem;
+      text-align: center;
+    }
     .item_image {
       margin-bottom: 50px;
+      .image_box{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;  
+        .destroy{
+          text-align: center;
+        }  
+        img{
+          display: flex;
+          margin-left: 10px;		   
+          margin-right: 10px;		    
+          margin-bottom: 2px;    
+          border-radius: 5px;		    
+          border: 2px solid #ddd;		   
+          height: 100px;
+          width: 100px;
+        }		   
+      }		  
       .item_image_paragraph {
         .file-btn {
           height: 150px;
@@ -59,7 +81,11 @@
       margin-bottom: 40px;
     }
     .item_category {
+      margin-bottom: 5px;
+    }
+    p.error-message-category{
       margin-bottom: 40px;
+      color: red;
     }
     .item_brand {
       margin-bottom: 40px;
@@ -117,6 +143,13 @@
           margin: 0;
         }
       }
+      p.error-message-price{
+        padding-top: 25px;
+        text-align: left;
+        clear:both;
+        color: red;
+      }
+
     }
     .item_price_fee {
       display: flex;
@@ -163,6 +196,10 @@
           color: #87cefa;
         }
       }
+    }
+
+    p.error-message{
+      color:red;
     }
     
     select::-ms-expand {
@@ -227,7 +264,8 @@
     }
    }
   }
-  .send_footer {
+  .footer_item {
+   .send_footer {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -261,5 +299,6 @@
       margin-bottom: 50px;
       color: #2e2e2e;
     }
+   }
   }
 }  

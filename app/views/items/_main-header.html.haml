@@ -1,7 +1,7 @@
 .header
   =form_tag("/", class: "header__form") do |f|
     .header__form__box 
-      = link_to "#" do
+      = link_to root_path do
         =image_tag("logo.png", class: "header__form__box--logo")
       .header__form__box__input
         =text_field_tag 'name','', class: "header__form__box__input--text", placeholder: "キーワードから探す" 

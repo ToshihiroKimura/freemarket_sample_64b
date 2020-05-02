@@ -64,6 +64,9 @@
           .item-information__option-area__report
             .item-information__option-area__report__btn
               =link_to "不適切な商品の通報","#"
+        .item-information-update
+          %li 
+            =link_to "編集する",edit_item_path, class: "update_btn"
       .comment-box
         %form
           %input

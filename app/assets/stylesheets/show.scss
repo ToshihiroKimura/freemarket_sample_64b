@@ -18,10 +18,7 @@
 
       .item-information{
         background-color: white;
-
         padding: 24px 40px 40px; 
-
-
         &__name{
           text-align: center;
           font-weight: bold;
@@ -56,7 +53,6 @@
               }
             }
           }
-
         } 
         &__price{
           margin: 24px 0 24px;
@@ -114,7 +110,8 @@
         }
         &__option-area{
           display: flex;
-          justify-content: space-between;        
+          justify-content: space-between; 
+          margin-bottom: 30px;       
           &__like{
             margin-top: 10px;
             &__btn{
@@ -144,6 +141,23 @@
                   content: '\f425\00a0';
                 }
               }
+            }
+          }
+        }
+        .item-information-update {
+          text-align: center;
+          li {
+            list-style: none;
+            .update_btn {
+              padding: 15px 70px;
+              border-radius: 5px;
+              text-decoration: none;
+              color: white;
+              background-color: #ea5550;
+              
+            }
+            .update_btn:hover {
+              background-color: #ce5242;
             }
           }
         }

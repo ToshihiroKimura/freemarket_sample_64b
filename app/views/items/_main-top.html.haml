@@ -84,11 +84,11 @@
         = link_to item_path(item.id), class: "items__list1__category" do
           .items__list1__category__images 
             -item.images.each do |image|
-              =image_tag item.images, alt: "" 
+              =image_tag "#{image.image}", alt: ""
             -if item.buyer.present?
               .sold-item 
-              %p
-                SOLD
+                %p
+                  SOLD
           .items__list1__category--data1
             .items__list1__category--data1__name
               %p 
@@ -114,7 +114,7 @@
       = link_to item_path(item.id), class: "items__list1__category" do
         .items__list1__category__images 
           -item.images.each do |image|
-            =image_tag item.images, alt: ""
+            =image_tag "#{image.image}", alt: ""
           -if item.buyer.present?
             .sold-item 
             %p

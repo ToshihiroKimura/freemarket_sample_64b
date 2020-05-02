@@ -1,5 +1,5 @@
 .purchase {
-  background-color: #F5F5F5;
+  background-color: #d3d3d3;
   width: 100vw;
   &__subheader {
     display:table;
@@ -55,6 +55,7 @@
           margin-left: 18px;
           &__name{
             font-size: 14px;
+            margin-bottom: 5px;
           }
           &__money{
             display: flex;
@@ -63,6 +64,7 @@
             }
             &__text{
               font-size: 12px;
+              margin-left: 5px;
             }
           }
         }
@@ -89,7 +91,7 @@
               font-weight: bold;
             }
             &__amount{
-              font-size: 30px;
+              font-size: 28px;
               font-weight: bold;
             }
           }
@@ -215,19 +217,19 @@
   }
   
   &__image{
-    width: 100.5px;
+    width: 102px;
     height: auto;
     padding-top: 10px;
     margin: 0 auto;
     color: black;
-    margin: 10px, 0;
+    margin: 20px, 0;
 
   }
     &__bottom{
       height: 65px;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
-      margin: 10px, 0;
+      margin: 20px, 0;
 
     }
   }
