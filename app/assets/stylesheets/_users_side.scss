@@ -45,7 +45,7 @@ html,body {
     }
   }
   &__list {
-    @include size(500px, 300px, 2px);
+    @include size(150px, 300px, 2px);
     @include color(#FFFFFF, 0);
     max-width: 100%;
     display: block;
@@ -72,12 +72,12 @@ html,body {
     }
   }
   &__confing {
-    @include size(350px, 300px , 0);
+    @include size(50px, 300px , 0);
     @include color(#bbbbbb, 0);
     font-size: 1.0rem;
     bottom: 2px;
     &__list {
-      @include size(350px, 300px, 0);
+      @include size(50px, 300px, 0);
       @include color(#FFFFFF, #272727);
       max-width: 100%;
       top: 20px;
@@ -103,25 +103,5 @@ html,body {
           position: absolute;
         }
     }
-  }
-}
-
-.camera__button {
-  @include size(120px, 120px, 15px);
-  @include color(#3CCACE,0);
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  p {
-    @include color(0,white);
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-  }
-  img {
-    @include size(60px, 60px, 0);
-    margin: auto;
   }
 }

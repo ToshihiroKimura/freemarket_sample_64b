@@ -162,6 +162,40 @@
           }
         }
       }
+      .item-btn-box{
+        background-color: #fff;
+        margin: 20px 0 20px 0;
+        .item-btn{
+          display: block;
+          padding: 20px;
+
+          text-align: center;
+          line-height: 50px;
+
+          &__edit{
+          background-color: red;
+          }
+          &__destroy{
+          background-color: gray;
+
+          }
+          &__purchase{
+
+            background-color: red;
+
+          }
+          a{
+            font-weight: 600;
+            display:block;
+            text-decoration: none;
+            color: #fff;
+
+
+          }
+        }
+      }
+
+
       .comment-box{
         width: 100%;
         padding: 24px;

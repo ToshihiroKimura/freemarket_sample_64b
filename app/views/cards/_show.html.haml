@@ -14,29 +14,3 @@
         %input{ type: "hidden", name: "card_id", value: "" }
         %p
           削除する
-
-
-      -# = form_tag(delete_cards_path, method: :post, id: 'charge-form',  name: "inputForm") do
-      -#   %input{ type: "hidden", name: "card_id", value: "" }
-      -#     %button 削除する
-
-
-
--# // =form_tag(cards_path, method: :get, class:"new") do
--# //   .mypage-main.col-9
--# //     %h2.header_title
--# //       支払い方法
--# //     .single-container
--# //       %section.card_section
--# //         %h3 クレジットカード一覧
--# //         - if @card.present?
--# //           .container
--# //             .card-info
--# //               %p.card-info__number
--# //                 = "**** **** **** " + @card_info.last4 #クレジットカードの下４桁を表示
--# //               %p.card-info__period 
--# //               = @exp_month + " / " + @exp_year
--# //               = button_to "削除する", card_path(@card), method: :delete, class:"card-info__delete"
--# //         - else
--# //           .new-card
--# //             = button_to "クレジットカードを追加する", new_card_path(@card), method: :show, class:"list"
