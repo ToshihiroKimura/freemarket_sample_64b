@@ -1,4 +1,0 @@
-module EshibitonHelper
-
-end
-
