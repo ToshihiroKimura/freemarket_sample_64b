@@ -19,9 +19,8 @@ html,body {
 .signup {
   @include size(450px, 500px, 0);
   @include color(#dddddd, 0);
-  margin-left: 700px;
   text-align: center;
-  margin-bottom: 50px;
+  margin: auto;
   .signup-content {
     line-height: 60px;
     font-size: 1.4rem;

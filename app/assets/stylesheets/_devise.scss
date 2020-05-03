@@ -182,15 +182,25 @@
     font-size: 14px;
   }
 
+  .input-box-select{
+    background-color: #fff;
+    width: 100%;
+    height: 48px;
+    text-indent: 20px;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    border-color: gainsboro;
+  }
+
   .input_box-half {
-    width: 45%;
+    width: 145px;
     line-height: 48px;
     padding-left: 20px;
     font-size: 14px;
   }
 
   .input_box-quarter {
-    width:22%;
+    width:60px;
     line-height: 48px;
     padding-left: 20px;
     font-size: 14px;
@@ -301,6 +311,16 @@
           display: flex;
           justify-content: space-around;
           line-height: 48px;
+            .year, .month, .day {
+              width: 80px;
+              height: 48px;
+              padding-left: 20px;
+              text-align: center;
+              -webkit-appearance: none;
+              border-radius: 0px;
+              background-color: #fff;
+              border-color: gainsboro;
+            }
           }
         }
 

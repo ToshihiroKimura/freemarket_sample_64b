@@ -1,9 +1,42 @@
-.user-main
-  %a{href: "#", class: "main__logo"}
-    =image_tag("member_photo_noimage_thumb.png")
-  %li
-    = current_user.nickname
-.user-main__content
-  お気に入りアイテム
-  .user-main__content__info
+.body
+  .user-main
+    %a{href: "#", class: "main__logo"}
+      =image_tag("member_photo_noimage_thumb.png")
+    %li
+      = current_user.nickname
+  .user-main__content
+    メインメニュー
+    .user-main__content__info
+      .side-body__list__gray
+        =link_to new_user_path, class: "list" do
+          %li
+            マイページ
+      .side-body__list
+        =link_to "#", class: "list" do
+          %li
+            出品する
+        -# =link_to root_path, class: "list" do
+        -#   %li
+        -#     出品した商品-出品中
+        -# =link_to root_path, class: "list" do
+        -#   %li
+        -#     出品した商品-取引中
+        -# =link_to root_path, class: "list" do
+        -#   %li
+        -#     出品した商品-売却済み
+        -# =link_to root_path, class: "list" do
+        -#   %li
+        -#     購入した商品-取引中
+        -# =link_to root_path, class: "list" do
+        -#   %li
+        -#     購入した商品-過去の取引
+        =link_to destroy_user_session_path, method: :delete, class: "list" do
+          %li
+            ログアウト
+      .side-body__confing
+        クレジットカード
+        .side-body__confing__list
+          = link_to "/cards/#{current_user.id}", class: "list" do
+            %li
+              登録/確認・削除
     

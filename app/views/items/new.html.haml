@@ -95,7 +95,7 @@
         .item_price_number
           %p
             ¥
-          = f.number_field :price, placeholder: "0", class: "input-form_price",id: "price-form", onKeyUp: "myFunc()"
+          = f.number_field :price, placeholder: "0", class: "input-form_price",id: "price-form"
         -if @item.errors[:price].any?
           %p.error-message-price 半角数字で300以上999999以内で入力してください
       .item_price_fee

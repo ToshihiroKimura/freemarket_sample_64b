@@ -1,6 +1,6 @@
 class AddressesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_address, only: [:edit, :update]
+  before_action :set_address, only: [:edit, :show, :update]
   
   def new
     @address = Address.new
@@ -13,6 +13,10 @@ class AddressesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @prefecture = Prefecture.find(@address[:prefecture])
   end
 
   def edit

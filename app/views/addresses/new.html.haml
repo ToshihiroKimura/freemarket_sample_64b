@@ -16,7 +16,7 @@
           %h2
             都道府県
             %span 必須
-          = f.text_field :prefecture, class: 'input_box', placeholder: '--', autofocus: true, id: 'prefecture'
+          = f.select :prefecture, Prefecture.all.map { |pre| [pre.name, pre.id] },{include_blank: "--"}, class: 'input-box-select', autofocus: true, id: 'prefecture'
           %p.red#alart_prefecture
         .group
           %h2

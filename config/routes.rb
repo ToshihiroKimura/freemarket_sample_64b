@@ -21,7 +21,7 @@ end
 
   #resources :images, only: [:index]
   resources :users, only: [:new, :show]
-  resources :addresses, only: [:new, :create, :edit, :update]
+  resources :addresses, only: [:new, :create, :show, :edit, :update]
   resources :cards, only: [:new, :show]do
     collection do
       post 'pay', to: 'cards#pay'

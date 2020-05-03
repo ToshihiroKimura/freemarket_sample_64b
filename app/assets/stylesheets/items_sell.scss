@@ -211,7 +211,7 @@
     	appearance: none;
       height: 50px;
       width: 100%; /*親要素いっぱい広げる*/
-      background-image: url(/assets/chevron-down-solid.svg);
+      background-image: image-url("chevron-down-solid.svg");
       background-repeat: no-repeat;
       background-size: 20px 15px;
       background-position: right 15px center;
