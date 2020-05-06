@@ -81,7 +81,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     if Address.where(user: current_user).present?
       @address = Address.where(user: current_user)
-      @prefecture = Prefecture.find(@address[:prefecture])
+      @prefecture = Prefecture.find(@current_user.address[:prefecture])
       if @card.present?
         Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
         customer = Payjp::Customer.retrieve(@card.customer_id)
