@@ -8,8 +8,8 @@ FactoryBot.define do
     nickname              {"taro"}
     birthday              {"2020/1/13"}
     email                 {"kkk@gmail.com"}
-    password              {"00000000"}
-    password_confirmation {"00000000"}
+    password              {"aaa00000"}
+    password_confirmation {"aaa00000"}
   end
 
 end
