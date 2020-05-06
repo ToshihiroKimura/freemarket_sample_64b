@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-=======
   before_action :set_category_pull
->>>>>>> 6121195cc62e2defb7f34e359a35f2e34ea76fcb
+  before_action :set_adress
 
   def new
     @user = current_user
@@ -20,5 +18,13 @@ class UsersController < ApplicationController
 
   def set_category_pull
     @parents = Category.where(ancestry: nil).order("id ASC").limit(13)
+  end
+
+  def set_adress
+    if Address.where(user: current_user).present?
+      @address = Address.where(user: current_user)
+    else
+      redirect_to new_address_path, alert: '住所を登録してください'
+    end
   end
 end

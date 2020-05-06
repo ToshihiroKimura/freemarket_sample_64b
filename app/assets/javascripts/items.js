@@ -24,7 +24,7 @@ $(function(){
                   <p>画像を変更する場合はブラウザでページを更新してください</p>
                 `
       $('.image_box').append(html);
-      $('.item_image_paragraph').remove();
+      $('.item_image_paragraph').hide();
     }
     fileReader.readAsDataURL(file);
   });

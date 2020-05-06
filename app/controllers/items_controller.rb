@@ -79,29 +79,33 @@ class ItemsController < ApplicationController
 
   def buy_confirmation
     @item = Item.find(params[:id])
-    @address = Address.find(current_user[:id])
-    @prefecture = Prefecture.find(@address[:prefecture])
-    if @card.present?
-      Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
-      customer = Payjp::Customer.retrieve(@card.customer_id)
-      @card_information = customer.cards.retrieve(@card.card_id)
-      @card_brand = @card_information.brand
-      case @card_brand
-      when "Visa"
-        @card_src = "visa.svg"
-      when "JCB"
-        @card_src = "jcb.svg"
-      when "MasterCard"
-        @card_src = "master-card.svg"
-      when "American Express"
-        @card_src = "american_express.svg"
-      when "Diners Club"
-        @card_src = "dinersclub.svg"
-      when "Discover"
-        @card_src = "discover.svg"
+    if Address.where(user: current_user).present?
+      @address = Address.where(user: current_user)
+      @prefecture = Prefecture.find(@address[:prefecture])
+      if @card.present?
+        Payjp.api_key = ENV["PAYJP_PRIVATE_KEY"]
+        customer = Payjp::Customer.retrieve(@card.customer_id)
+        @card_information = customer.cards.retrieve(@card.card_id)
+        @card_brand = @card_information.brand
+        case @card_brand
+        when "Visa"
+          @card_src = "visa.svg"
+        when "JCB"
+          @card_src = "jcb.svg"
+        when "MasterCard"
+          @card_src = "master-card.svg"
+        when "American Express"
+          @card_src = "american_express.svg"
+        when "Diners Club"
+          @card_src = "dinersclub.svg"
+        when "Discover"
+          @card_src = "discover.svg"
+        end
+      else
+        redirect_to new_card_path,alert: 'カード情報を登録してください'
       end
     else
-      redirect_to new_card_path,alert: 'カード情報を登録してください'
+      redirect_to new_address_path,alert: '住所を登録してください'
     end
   end
 
