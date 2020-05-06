@@ -3,9 +3,11 @@ class ItemsController < ApplicationController
   require "payjp"
   before_action :set_card, only:[:buy_confirmation, :payment, :buy_complete]
   before_action :set_pay_jp_api_key, only: [:payment]
+  before_action :set_category_pull
 
   def index
    @items = Item.includes(:images).order('created_at DESC').limit(3)
+   @parents = Category.where(ancestry: nil).order("id ASC").limit(13)
   end
 
   def new
@@ -32,7 +34,7 @@ class ItemsController < ApplicationController
     @category_parent<<parent.name
     end
     if @item.save
-      redirect_to root_path , alert: '出品しました'
+      redirect_to root_path , alert: '商品を出品しました'
     else
       @item.images.build
       render :new 
@@ -40,10 +42,19 @@ class ItemsController < ApplicationController
   end
 
   def update
-    item = Item.find(params[:id])
-    item.update!(item_params)
-    redirect_to root_path(item.id)
-  
+    @item = Item.find(params[:id])
+    @images = @item.images
+    begin
+      @item.update!(item_params)
+    rescue
+      @item = Item.find(params[:id])
+      @images = @item.images
+      @item.update(except_image)
+    end
+    if @images.length >= 2
+      @images.first.destroy
+    end
+    redirect_to item_path, alert: '商品情報を変更しました'
   end
 
   def show
@@ -51,17 +62,17 @@ class ItemsController < ApplicationController
 
   def edit
     @item = Item.includes(:images).find(params[:id])
-    @category_parent = ["---"]
-    @category_parent= Category.where(ancestry: nil).each do |parent|
-      @category_parent<<parent.name
+    @category_parent_array = []
+    Category.where(ancestry: nil).each do |parent|
+      @category_parent_array << parent.name
     end
+    @category_child_array = @item.category.parent.parent.children
+    @category_grandchild_array = @item.category.parent.children
   end
 
   def destroy
-    if @item.solder_id == current_user.id
-      @item.destroy
-    end
-    redirect_to root_path
+    @item.destroy
+    redirect_to root_path alert: '商品を削除しました'
   end
 
 
@@ -90,7 +101,7 @@ class ItemsController < ApplicationController
         @card_src = "discover.svg"
       end
     else
-      redirect_to new_card_path
+      redirect_to new_card_path,alert: 'カード情報を登録してください'
     end
   end
 
@@ -112,9 +123,17 @@ class ItemsController < ApplicationController
 
 
   private
+
+  def set_category_pull
+    @parents = Category.where(ancestry: nil).order("id ASC").limit(13)
+  end
   
   def item_params
-    params.require(:item).permit(:name,:text,:item_status,:price,:delivery_area,:delivery_charge,:delivery_days,:brand_id,:category_id,images_attributes: [:image]).merge(solder_id: current_user.id)
+    params.require(:item).permit(:name,:text,:item_status,:price,:delivery_area,:delivery_charge,:delivery_days,:brand,:category_id,images_attributes: [:image, :id]).merge(solder_id: current_user.id)
+  end
+
+  def except_image
+    params.require(:item).permit(:name,:text,:item_status,:price,:delivery_area,:delivery_charge,:delivery_days,:brand,:category_id).merge(solder_id: current_user.id)
   end
 
   def set_item_information

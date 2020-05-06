@@ -9,19 +9,13 @@
         .text
           %p 出品画像
           %span 必須
-        .image_box
-        .item_image_paragraph
-          =f.fields_for :images do |i|
-            = i.label :image, class: "image-file" do
-              .file-btn
-                =icon("fas", "camera",class: "icon")
-                %p 
-                  ドラッグアンドドロップ
-                  %br
-                    またはクリックしてファイルをアップロード
-                =i.file_field :image, class: 'file'
-          - if @item.errors[:images].any?
-            %p.error-message 画像がありません
+        .images_line
+          .image_box{id: "selected_image"}
+            = image_tag @item.images.first.image, class:"img", id: "image"
+            =f.fields_for :images do |i|
+              = i.label :image do
+                .btn_change 変更
+                = i.file_field :image, class: "add_file"
         .input_item_image-new
       .item_name
         .text
@@ -37,15 +31,18 @@
           %span 必須
         =f.text_area :text, maxlength:'1000', placeholder: "商品の説明（必須 1,000文字以内（色、重さ、定価、注意点など)", class: "item-text_field"
         -if @item.errors[:text].any?
-          %p.error-message 選択してください  
+          %p.error-message 入力してください
       .item_category
         .text
           %p カテゴリー
           %span 必須 
         .item_category_form
-          = f.collection_select :category_id, @category_parent,:id,:name,{include_blank: "選択してください"},{class: "input-select",id: "parent-form"}
-      -if @item.errors[:category].any?
-        %p.error-message-category 選択してください       
+          = f.select :category_id, options_for_select(@category_parent_array.map{|c|[c, {}]}, @item.category.parent.parent.name), {}, {class: 'input-select'}
+          = f.select :category_id, options_for_select(@category_child_array.map{|c|[c[:name], c[:id], {'data-category'=>c[:id], 'id'=>c[:id]}]}, @item.category.parent.id), {}, {class: 'input-select'}
+          = f.select :category_id, options_for_select(@category_grandchild_array.map{|c|[c[:name], c[:id], {'data-category'=>c[:id], 'id'=>c[:id]}]}, @item.category.id), {}, {class: 'input-select'}
+          -# = f.text_field :category_id, id: 'grand_child_result_id', type: 'hidden'
+      -if @item.errors[:category_id].any?
+        %p.error-message-category 入力してください      
       .item_brand
         .text
           %p ブランド

@@ -2,21 +2,22 @@
   .header_item
     = render "devise/shared/header"
   .body_item
+    .body_item-title
+      %p.title 出品する
     =form_for @item do |f|
       .item_image
         .text
           %p 出品画像
           %span 必須
-        .image_box
+        .images_line
+          .image_box
         .item_image_paragraph
           =f.fields_for :images do |i|
             = i.label :image, class: "image-file" do
               .file-btn
                 =icon("fas", "camera",class: "icon")
                 %p 
-                  ドラッグアンドドロップ
-                  %br
-                    またはクリックしてファイルをアップロード
+                  クリックしてファイルをアップロード
                 =i.file_field :image, class: 'file'
           - if @item.errors[:images].any?
             %p.error-message 画像がありません
@@ -28,21 +29,21 @@
         .item_input_form_name
           = f.text_field :name, maxlength: '40', placeholder: "４０字まで", class: "name_field"
           -if @item.errors[:name].any?
-            %p.error-message 選択してください    
+            %p.error-message 入力してください    
       .item_description
         .text
           %p 商品の説明
           %span 必須
         =f.text_area :text, maxlength:'1000', placeholder: "商品の説明（必須 1,000文字以内（色、重さ、定価、注意点など)", class: "item-text_field"
         -if @item.errors[:text].any?
-          %p.error-message 選択してください  
+          %p.error-message 入力してください  
       .item_category
         .text
           %p カテゴリー
           %span 必須 
         .item_category_form
           = f.collection_select :category_id, @category_parent,:id,:name,{include_blank: "選択してください"},{class: "input-select",id: "parent-form"}
-      -if @item.errors[:category].any?
+      -if @item.errors[:category_id].any?
         %p.error-message-category 選択してください       
       .item_brand
         .text

@@ -16,116 +16,127 @@ html,body {
   color: $color;
 }
 
-.user-main {
-  @include size(150px , 70%, 0);
-  background: linear-gradient(#DBFF71, #05FBFF,);
-  position: relative;
-  margin: auto;
-  margin-top: 70px;
-  list-style: none;
-  margin-bottom: 20px;
-  img {
-    @include size(60px, 60px, 0);
-    position: absolute;
-    margin:  auto;
-    top: -50px;
-    bottom: -50px;
-    right: -50px;
-    left: -50px;
-  }
-  li {
-    @include size(30px, 100%, 0);
-    @include color(0,white);
-    position: absolute;
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0 auto;
-    bottom: 10px;
-  }
-}
 
-.user-main__content {
-  @include size(400px, 70%, 0);
-  font-size: 1.4rem;
-  top: 50px;
-  margin: auto;
-  text-align: center;
-  &__info {
-  @include size(400px, 100%, 0);
-  margin-bottom: 15px;
-
-  .side-body {
-    @include size(300px, 100%, 0);    
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    &__list__gray {
-      @include size(40px, 100%, 0);
-      @include color(#dddddd, 0);
+.body {
+  @include size(590px , 100%, 0);
+  @include color(#d3d3d3,0);
+  .main-back {
+    @include size(590px , 60%, 0);
+    @include color(white,0);
+    margin: auto;
+    margin-bottom: 40px;
+    .user-main {
+      @include size(150px , 80%, 0);
+      background-color: #48D1CC;
+      // background: linear-gradient(#DBFF71, #05FBFF,);
+      position: relative;
+      margin: auto;
       list-style: none;
-      justify-content: space-around;
-      margin-left: 2px;
-      margin: auto;
-      .list {
-        @include color(0,#272727);
-        text-decoration: none;
-        font-size: 1.0rem;
-        li {
-          top: 10px;
-          position: relative;
-        }
+      margin-bottom: 20px;
+      img {
+        @include size(60px, 60px, 0);
+        position: absolute;
+        margin:  auto;
+        top: -50px;
+        bottom: -50px;
+        right: -50px;
+        left: -50px;
+      }
+      li {
+        @include size(30px, 100%, 0);
+        @include color(0,gray);
+        position: absolute;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0 auto;
+        bottom: 10px;
       }
     }
-    &__list {
-      @include size(150px, 100%, 0px);
-      @include color(#FFFFFF, 0);
-      max-width: 100%;
-      display: block;
-      justify-content: space-around;
+
+    .user-main__content {
+      @include size(400px, 60%, 0);
+      font-size: 1.4rem;
+      top: 50px;
       margin: auto;
-      .list {
-        @include size(40px, 100% , 1px);
-        @include color(#FFFFFF, #272727);
-        text-decoration: none;
-        font-size: 1.0rem;
-        bottom: 1px;
-        li {
+      text-align: center;
+      &__info {
+      @include size(400px, 100%, 0);
+      margin-bottom: 15px;
+
+      .side-body {
+        @include size(300px, 100%, 0);    
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        &__list__gray {
+          @include size(40px, 100%, 0);
+          @include color(#dddddd, 0);
+          list-style: none;
+          justify-content: space-around;
+          margin-left: 2px;
+          margin: auto;
+          .list {
+            @include color(0,#272727);
+            text-decoration: none;
+            font-size: 1.0rem;
+            li {
+              top: 10px;
+              position: relative;
+            }
+          }
+        }
+        &__list {
+          @include size(220px, 100%, 0px);
+          @include color(#FFFFFF, 0);
+          max-width: 100%;
           display: block;
-          top: 1px;
-          position: relative;
-          background-color: #dddddd;
-          line-height: 40px;
-          bottom: 1px;
+          justify-content: space-around;
+          margin: auto;
+          .list {
+            @include size(40px, 100% , 1px);
+            @include color(#FFFFFF, #272727);
+            text-decoration: none;
+            font-size: 1.0rem;
+            bottom: 1px;
+            li {
+              display: block;
+              top: 1px;
+              position: relative;
+              background-color: #dddddd;
+              line-height: 40px;
+              bottom: 1px;
+            }
+          }
         }
-      }
-    }
-    &__confing {
-      @include size(60px, 100% , 0);
-      @include color(#bbbbbb, 0);
-      font-size: 1.0rem;
-      margin: auto;
-      margin-top: 20px;
-      &__list {
-        @include size(60px, 100%, 0);
-        @include color(#FFFFFF, #272727);
-        max-width: 100%;
-        display: block;
-        justify-content: space-around;
-        text-decoration: none;
-        .list {
-          @include size(40px, 100% , 0);
-          @include color(#FFFFFF,#272727);
-          text-decoration: none;
+        &__confing {
+          @include size(60px, 100% , 0);
+          @include color(#bbbbbb, 0);
           font-size: 1.0rem;
-        }
-        li {
-          display: block;
-          position: relative;
-          background-color: #dddddd;
-          line-height: 40px;
+          margin: auto;
+          margin-top: 20px;
+          &__list {
+            @include size(60px, 100%, 0);
+            @include color(#FFFFFF, #272727);
+            max-width: 100%;
+            display: block;
+            justify-content: space-around;
+            text-decoration: none;
+            .list {
+              @include size(40px, 100% , 0);
+              @include color(#FFFFFF,#272727);
+              text-decoration: none;
+              font-size: 1.0rem;
+            }
+            li {
+              display: block;
+              position: relative;
+              background-color: #dddddd;
+              line-height: 40px;
+            }
+          }
         }
       }
+      }
     }
-  }
   }
 }

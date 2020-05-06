@@ -20,7 +20,11 @@ Rails.application.routes.draw do
 end
 
   #resources :images, only: [:index]
-  resources :users, only: [:new, :show]
+  resources :users, only: [:new, :show, :delete, :logout] do
+    member do
+      get 'logout'
+    end
+  end
   resources :addresses, only: [:new, :create, :show, :edit, :update]
   resources :cards, only: [:new, :show]do
     collection do

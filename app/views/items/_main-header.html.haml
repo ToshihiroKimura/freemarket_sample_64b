@@ -8,9 +8,37 @@
       =button_tag type: 'submit', class: "header__form__box--btn" do
         =icon('fa', 'search')
     .header__form__links
-      %li.header__form__links__link1
-        =link_to "カテゴリー","#",class: "header__form__links__link1--category"
-        =link_to "ブランド","#",class: "header__form__links__link1--brand"
+      %ul.header__form__links__link1
+        .category_list
+          =link_to "カテゴリー",root_path, class: "category-lists" 
+          =icon("fas", "list-ul")
+          - if @parents.present?
+            %ul.parent_top
+              - @parents.each do |parent| 
+                %li.parent_list
+                  =link_to parent.name, root_path
+                  %ul.child_top
+                    -parent.children.each do |child|
+                      %li.child_list
+                        =link_to child.name, root_path  
+                        %ul.grandchild_top
+                          -child.children.each do |grandchild|
+                            %li.grandchild_list
+                              =link_to grandchild.name, root_path
+        .brand_list
+          =link_to "ブランド", root_path, class: "brand-lists"
+          =icon("fas", "tag")
+          %ul.brand-menu
+            %li.brand-menu_li
+              =link_to "シャネル",root_path 
+            %li.brand-menu_li
+              =link_to "ナイキ", root_path 
+            %li.brand-menu_li
+              =link_to "ルイ ヴィトン", root_path 
+            %li.brand-menu_li
+              =link_to "アディダス", root_path 
+            %li.brand-menu_li
+              =link_to "ブランド一覧", root_path 
       - if user_signed_in?
         %li.header__form__links__link2
           =link_to "マイページ", new_user_path, class: "header__form__links__link2--login"
@@ -19,4 +47,3 @@
         %li.header__form__links__link2
           =link_to "ログイン", new_user_session_path, class: "header__form__links__link2--login"
           =link_to "新規会員登録", new_user_registration_path, class: "header__form__links__link2--signin"
-  

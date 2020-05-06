@@ -1,0 +1,11 @@
+.body
+  = render "devise/shared/header"
+  - breadcrumb :logout
+  -# = render "layouts/breadcrumbs"
+  
+  .contents
+    .logout
+      .logout__form
+        = button_to "ログアウト", destroy_user_session_path, {method: :delete, class: "logout__form--button"}
+  = render "devise/shared/footer"
+  -# = render "/homes/postitem"

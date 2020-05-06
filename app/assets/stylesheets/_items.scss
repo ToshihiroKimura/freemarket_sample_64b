@@ -22,82 +22,9 @@ html,body {
 .main {
   @include size(100%, 100%, 0);
   position: relative;
-  .header {
-    @include size(100px, 100%, 0);
-    &__form {
-      @include size(100%, 100%, 0 50px);
-      max-width: 1120px;
-      margin: auto;
-      &__box {
-        @include size(60px, 100%, 0);
-        margin: auto;
-        margin-top: 10px;
-        display: flex;
-        a {
-          list-style: none;
-          margin-right: 10px;
-          float: left;
-        }
-        &--logo {
-          @include size(50px, 140px, 0);
-          object-fit: contain; 
-        }
-        &__input {
-          @include size(35px, 100%, 0);
-          margin:10px 0 0 20px;
-          float: right;
-          &--text {
-            @include size(100%, 100%, 5px);
-            float: left;
-          }
-        } 
-        &--btn {
-          @include size(35px, 50px, 0);
-          @include color(#3CCACE, 0);
-          margin-top: 10px;
-          float: right;
-          i {
-            @include color(0, white);
-            font-size: 1.2rem;
-            font-family: "Font Awesome 5 Free";
-          }
-        }
-      }
-      &__links {
-        &__link1 {
-          float: left;
-          list-style: none;
-          &--category {
-            text-decoration: none;
-            margin-right: 20px;
-          }
-          &--brand {
-            text-decoration: none;
-          }
-        }
-        &__link2 {
-          float: right;
-          list-style: none;
-          &--login {
-            text-decoration: none;
-            margin-right: 20px;
-          }
-          &--signin {
-            text-decoration: none;
-          }
-        }
-        a {
-          @include color(0, #3f3f3f);
-          font-size: 0.9rem;
-        }
-        a:hover {
-          color: #ffa500;
-        }
-      }
-    }  
-  }
   .image1 {
     @include size(600px, 100%, 0);
+    position: relative;
     &--img {
       @include size(100%, 100%, 0);
       object-fit: cover;
@@ -340,6 +267,9 @@ html,body {
             border-style: solid;
             border-width: 80px 80px 0 0;
             border-color: #ea5532 transparent transparent transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
           }
           p {
             color: white;
@@ -457,48 +387,38 @@ html,body {
   }
   .top_footer {
     &__image5 {
-      @include size(350px, 100%, 0);
+      @include size(350px, 100%, 100px 70px);
+      background-image: image-url("bg-appBanner-pict.jpg");
+      background-position: center;
+      background-size: cover;
+      text-align: center;
       position: relative;
-      img {
-        object-fit: cover;
-        text-align: center;
-        
-        
-      }
+        margin: auto;
       &--text1  {
         @include size(20%, 100%,0);
         @include color(0,white);
         text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
         font-size: 1.5rem;
         font-weight: bold;
-        position: absolute;
-        top: 100px;
-        left: 32%;
       }
       &--text2 {
         @include size(20%, 100%,0);
         @include color(0,white);
         text-shadow:0px 0px 10px rgba(8, 8, 8, 0.5);
         font-size: 2.2rem;
-        position: absolute;
-        bottom: 135px;
-        left: 35%;
       }
       &--badge {
+        
         margin-top: 20px;
-        position: absolute;
-        bottom: 50px;
-        left: 23%;
         display: flex;
         justify-content: center;
         &__AppStore {
-          @include size(70px, 25%,0);
+          @include size(70px, 200px,0);
           margin-top: 14px;
           margin-right: 10px;
         }
         &__Google {
-          @include size(99px,30%,0);
-         
+          @include size(99px,250px,0);
         }
         img:hover {
           opacity: 0.5;

@@ -34,7 +34,7 @@ $(function(){
       var parentCategory = document.getElementById('parent-form').value;
       if (parentCategory !=""){
         $.ajax({
-          url: 'items/category_children',
+          url: '/items/category_children',
           type: 'GET',
           data: {parent_name: parentCategory},
           dataType: 'json'
@@ -62,7 +62,7 @@ $(function(){
       var childCategoryId = $('#children-form option:selected').data('category');
       if (childCategoryId !="---"){
         $.ajax({
-          url: 'items/category_grandchildren',
+          url: '/items/category_grandchildren',
           type: 'GET',
           data: {child_name: childCategoryId},
           dataType: 'json'

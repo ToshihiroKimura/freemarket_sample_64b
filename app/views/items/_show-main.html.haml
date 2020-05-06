@@ -13,7 +13,8 @@
             =@item.price
           .item-information__price__detail
             %span （税込）
-            %span 送料込み
+            %span
+              =@item.delivery_charge
         .item-information__text
           =@item.text
         .item-information__table
@@ -32,6 +33,7 @@
               %tr
                 %th ブランド
                 %td
+                  =@item.brand
               %tr
                 %th 商品のサイズ
                 %td
@@ -61,15 +63,19 @@
               =link_to "不適切な商品の通報","#"
       .item-btn-box
         .item-btn
-          -if user_signed_in? && current_user.id == @solder.id    
-            = link_to edit_item_path(@item),class:"item-btn__edit" do
-              %span 商品の編集
-            %span or
-            = link_to item_path(@item),method: :delete,class:"item-btn__destroy" do
-              %span この商品を削除する
+          -if @item.buyer.nil?
+            -if user_signed_in? && current_user.id == @solder.id    
+              = link_to edit_item_path(@item),class:"item-btn__edit" do
+                %span 商品の編集
+              %span or
+              = link_to item_path(@item),method: :delete,class:"item-btn__destroy" do
+                %span この商品を削除する
+            -else
+              = link_to buy_confirmation_item_path(@item),class:"item-btn__purchase" do
+                %span 購入画面に進む
           -else
-            = link_to buy_confirmation_item_path(@item),class:"item-btn__purchase" do
-              %span 購入画面に進む
+            =link_to root_path,class:"item-btn__sold-out" do
+              %span この商品は販売終了しました
 
       .comment-box
         %form

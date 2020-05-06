@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module FreemarketSample64b
   class Application < Rails::Application
     config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
+    config.i18n.default_locale = :ja
   end
 
   class ApplicationController < ActionController::Base
